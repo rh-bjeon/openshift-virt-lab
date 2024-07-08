@@ -48,7 +48,7 @@ Pod 및 서비스의 고가용성을 보장하려면 IP 장애 조치 대신 Met
 
 노드를 사용할 수 없게 되면 장애 조치가 자동으로 수행됩니다. 다른 노드의 스피커(speaker) 포드는 노드를 사용할 수 없음을 감지하고, 살아남은 노드의 새 스피커(speaker) 포드는 실패한 노드의 서비스 IP 주소 소유권을 가져옵니다.
 
-<img src="lab-images/vm_lb--0.1_layer2.png" title="100px" alt="가상머신 로드밸런싱 레이어 2 모드"></img> <br> 
+<img src="lab-images/vm_lb--0.1_layer2.png" title="100px" alt="가상머신 로드밸런싱 레이어 2 모드"> <br> 
 <br>
 <br>
 
@@ -58,7 +58,7 @@ BGP 모드에서는 기본적으로 각 스피커(speaker) 포드가 서비스�
 
 노드를 사용할 수 없게 되면 라우터는 로드 밸런서 IP 주소를 광고하는 스피커 포드가 있는 다른 노드와의 새 연결을 시작합니다.
 
-<img src="lab-images/vm_lb--0.2_bgp.png" title="100px" alt="가상머신 로드밸런싱 BGP 모드"></img> <br> 
+<img src="lab-images/vm_lb--0.2_bgp.png" title="100px" alt="가상머신 로드밸런싱 BGP 모드"> <br> 
 <br>
 <br>
 
@@ -69,12 +69,12 @@ BGP 모드에서는 기본적으로 각 스피커(speaker) 포드가 서비스�
 1. **Operators** → **설치된 Operators**로 이동합니다. 
 
    **모든 프로젝트**를 선택하고 **MetalLB**를 선택합니다.
-   <img src="new_images/147_metallb_operator.png" title="100px" alt="가상머신 로드밸런싱 오퍼레이터 설치"></img> <br>
+   <img src="new_images/147_metallb_operator.png" title="100px" alt="가상머신 로드밸런싱 오퍼레이터 설치"> <br>
 <br>
 
 2. **세부 정보** 탭에서 *제공된 API* 섹션을 검토합니다.
 
-   <img src="new_images/148_metalb_details.png" title="100px" alt="가상머신 로드밸런싱 MetalLB API"></img> <br>
+   <img src="new_images/148_metalb_details.png" title="100px" alt="가상머신 로드밸런싱 MetalLB API"> <br>
    * *상태* 값이 `Conditions; Available, Upgradable`인 것을 확인합니다.
 <br>
 
@@ -82,7 +82,7 @@ BGP 모드에서는 기본적으로 각 스피커(speaker) 포드가 서비스�
 
 3. **MetalLB** 탭을 선택하여 배포가 올바르게 설치 및 구성되었는지 확인합니다.
 
-   <img src="new_images/149_metallb_status.png" title="100px" alt="가상머신 로드밸런싱 MetalLB 리뷰"></img> <br>
+   <img src="new_images/149_metallb_status.png" title="100px" alt="가상머신 로드밸런싱 MetalLB 리뷰"> <br>
    * *상태* 값이 `Conditions; Available, Upgradable`인 것을 확인합니다.
 <br>
 
@@ -92,12 +92,12 @@ BGP 모드에서는 기본적으로 각 스피커(speaker) 포드가 서비스�
 
 1. 프로젝트 `metallb-system`으로 전환하고 **IPAddressPool** 탭을 선택합니다.
 
-   <img src="new_images/150_metallb_ipaddresspool.png" title="100px" alt="IPAddressPool 탭을 선택"></img> <br> 
+   <img src="new_images/150_metallb_ipaddresspool.png" title="100px" alt="IPAddressPool 탭을 선택"> <br> 
 <br>
 
 2. **IPAddressPool 만들기**를 누르고 `Form view`를 확인합니다.
 
-   <img src="new_images/151_metallb_ipaddresspool_edit.png" title="100px" alt="MetalLB IPAddressPool 폼"></img> <br> 
+   <img src="new_images/151_metallb_ipaddresspool_edit.png" title="100px" alt="MetalLB IPAddressPool 폼"> <br> 
 <br>
 
 3. 폼에 다음과 같이 값을 입력합니다.
@@ -108,12 +108,12 @@ BGP 모드에서는 기본적으로 각 스피커(speaker) 포드가 서비스�
      + *값*에 `192.168.123.200-192.168.123.250`을 입력하여 주소 풀로 구성
      
    완료되면 다음 이미지와 유사하게 보일 것입니다.
-   <img src="new_images/152_metallb_addresspool_edit2.png" title="100px" alt="MetalLB IPAddressPool 정의"></img> <br> 
+   <img src="new_images/152_metallb_addresspool_edit2.png" title="100px" alt="MetalLB IPAddressPool 정의"> <br> 
 <br>
 
 4. 아래로 스크롤하여 **만들기**를 누르고 생성된 풀을 확인합니다.
 
-   <img src="new_images/153_metallb_ipaddresspool2.png" title="100px" alt="생성된 MetalLB IPAddressPool 확인"></img> <br> 
+   <img src="new_images/153_metallb_ipaddresspool2.png" title="100px" alt="생성된 MetalLB IPAddressPool 확인"> <br> 
 <br>
 
 ### 3.3 레이어 2 모드 구성
@@ -121,7 +121,7 @@ BGP 모드에서는 기본적으로 각 스피커(speaker) 포드가 서비스�
 이를 위해 실습에서는 Layer2 모드에서 MetalLB를 사용하겠습니다.
 
 1. **L2Advertisement** 탭으로 전환하고 **Create L2Advertisement**을 누릅니다.
-   <img src="new_images/154_metallab_layer2.png" title="100px" alt="MetalLB L2Advertisemen 생성"></img> <br>
+   <img src="new_images/154_metallab_layer2.png" title="100px" alt="MetalLB L2Advertisemen 생성"> <br>
 <br>
 
 2. 폼에 다음과 같이 값을 입력합니다.
@@ -131,12 +131,12 @@ BGP 모드에서는 기본적으로 각 스피커(speaker) 포드가 서비스�
      + *값*에 다음과 같이 `ip-addresspool-webapp` 값을 지정
 
    완료되면 다음 이미지와 유사하게 보일 것입니다.
-   <img src="new_images/155_metallb_layer2_edit.png" title="100px" alt="MetalLB L2Advertisement 값을 지정"></img> <br>
+   <img src="new_images/155_metallb_layer2_edit.png" title="100px" alt="MetalLB L2Advertisement 값을 지정"> <br>
 <br>
 
 3. **만들기**를 누르고 생성된 값을 확인합니다.
 
-   <img src="new_images/156_metallb_layer2_2.png" title="100px" alt="MetalLB L2Advertisement 값을 지정"></img> <br>
+   <img src="new_images/156_metallb_layer2_2.png" title="100px" alt="MetalLB L2Advertisement 값을 지정"> <br>
 <br>
 <br>
 
@@ -146,7 +146,7 @@ VMWare에서 마이그레이션된 가상머신은 현재 이전 모듈에서 �
 
 1. **네트워킹** → **서비스**로 이동하여 `vmexamples` 프로젝트를 선택합니다.
 
-   <img src="new_images/157_metallb_svc.png" title="100px" alt="가상머신 로드밸런싱 서비스"></img> <br>
+   <img src="new_images/157_metallb_svc.png" title="100px" alt="가상머신 로드밸런싱 서비스"> <br>
 <br>
 
 2. **서비스 만들기**를 누르고 다음 코드 조각으로 양식을 작성합니다.
@@ -167,7 +167,7 @@ VMWare에서 마이그레이션된 가상머신은 현재 이전 모듈에서 �
          targetPort: 3306   
    ```
 
-   <img src="new_images/158_metallb_db_svc.png" title="100px" alt="가상머신 로드밸런싱 서비스"></img> <br>
+   <img src="new_images/158_metallb_db_svc.png" title="100px" alt="가상머신 로드밸런싱 서비스"> <br>
 
 > [!NOTE]
 > 표시된 `type`은 `LoadBalancer`입니다. 이 클러스터에는 MetalLB가 설치되어 있으므로 이를 사용하여 지정된 포트가 노출됩니다. F5, Nginx 등과 같은 파트너가 제공하는 다른 로드밸런서 옵션이 있습니다.
@@ -175,17 +175,17 @@ VMWare에서 마이그레이션된 가상머신은 현재 이전 모듈에서 �
 
 3. **만들기**를 누르고 생성된 서비스 `database-metallb`를 검토합니다. 로드밸런서에 할당된 IP 주소는 이전 실습에서 지정한 범위에 속합니다.
 
-   <img src="new_images/159_metallb_db_svc_2.png" title="100px" alt="가상머신 로드밸런싱 생성된 서비스"></img> <br>
+   <img src="new_images/159_metallb_db_svc_2.png" title="100px" alt="가상머신 로드밸런싱 생성된 서비스"> <br>
 <br>
 
 4. 외부 IP를 통해 데이터베이스 서비스에 대한 연결을 확인하려면 오른쪽 상단의 다음 아이콘을 클릭하여 웹 터미널을 엽니다.
 
-   <img src="new_images/160_web_terminal.png" title="100px" alt="가상머신 콘솔 아이콘"></img> <br>
+   <img src="new_images/160_web_terminal.png" title="100px" alt="가상머신 콘솔 아이콘"> <br>
 <br>
 
 5. 화면 하단에 콘솔이 나타납니다
 
-   <img src="new_images/161_web_terminal_console.png" height="75%" width="75%" title="100px" alt="가상머신 콘솔 연결"></img> <br>
+   <img src="new_images/161_web_terminal_console.png" height="75%" width="75%" title="100px" alt="가상머신 콘솔 연결"> <br>
 <br>
 
 6. 오른쪽 콘솔을 사용하여 할당된 IP와 포트 3306에 액세스해 봅니다.
@@ -202,7 +202,7 @@ VMWare에서 마이그레이션된 가상머신은 현재 이전 모듈에서 �
    * Connected to 192.168.123.202 (192.168.123.202) port 3306 (#0)
    ```
 
-   <img src="new_images/162_web_terminal_curl.png" title="100px" alt="데이터베이스 서비스 확인"></img> <br>
+   <img src="new_images/162_web_terminal_curl.png" title="100px" alt="데이터베이스 서비스 확인"> <br>
 <br>
 <br>
 
