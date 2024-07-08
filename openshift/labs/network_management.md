@@ -41,14 +41,14 @@
 
 1. **네트워킹** → **NetworkAttachmentDefinitions**로 이동하고 **Create network attachment definition**을 클릭 합니다.
 
-   <img src="new_images/74_networkattachment.png" title="100px" alt="Network Attachment Definition 대시보드"></img> <br> 
+   <img src="new_images/74_networkattachment.png" title="100px" alt="Network Attachment Definition 대시보드"> <br> 
 
 > [!IMPORTANT]
 > 프로젝트 `vmexamples`를 선택합니다.
 <br>
 
 2. 다음과 같이 `vmexamples` 프로젝트에 대한 설정을 **Edit YAML**을 선택하여 아래 내용으로 대체한 후, **Create**를 클릭 합니다.
-    <img src="new_images/75_nework_yaml_update.png" title="100px" alt="Network Attachment Definition YAML"></img> <br> 
+    <img src="new_images/75_nework_yaml_update.png" title="100px" alt="Network Attachment Definition YAML"> <br> 
    아래 내용을 복사하여 내용을 대체합니다.
 
 ```yaml
@@ -70,7 +70,7 @@ spec:
     }
 ```
 
-   <img src="new_images/74_networkattachment_edit_yaml.png" title="100px" alt="Network Attachment Definition 생성"></img> <br> 
+   <img src="new_images/74_networkattachment_edit_yaml.png" title="100px" alt="Network Attachment Definition 생성"> <br> 
 
    호스트의 단일 리눅스 브리지에는 다양한 VLAN이 있을 수 있습니다. 이 시나리오에서는 별도의 호스트 인터페이스와 브리지가 아닌 각 항목에 대한 Network Attachment Definition만 생성하면 됩니다.
    
@@ -80,14 +80,14 @@ spec:
 
 3. *Network Attachment Definition*의 세부사항을 조사하십시오. `vmexamples` 프로젝트에서 생성되었기 때문에 다른 프로젝트에서는 사용할 수 없습니다.
 
-   <img src="new_images/76_network_details.png" title="100px" alt="생성된 Network Attachment Definition 확인"></img> <br>
+   <img src="new_images/76_network_details.png" title="100px" alt="생성된 Network Attachment Definition 확인"> <br>
 <br>
 <br>
 
 ## 3. 외부 네트워크 가상머신 연결
 
 1. **Virtualization** → **VirtualMachines**으로 이동하여 `fedora02` 가상머신을 선택합니다. **Configuration** 탭을 클릭한 다음 **Network** 메뉴를 클릭하고, **Add network interface**를 클릭합니다.
-   <img src="new_images/77_fedora02_network_add.png" title="100px" alt="하부 탭인 네트워크 인터페이스 확인"></img> <br>
+   <img src="new_images/77_fedora02_network_add.png" title="100px" alt="하부 탭인 네트워크 인터페이스 확인"> <br>
 <br>
 
 VM이 현재 **Pod** 네트워킹에 연결된 단일 인터페이스를 기본으로 사용하고 있음을 알 수 있습니다. <br>
@@ -97,7 +97,7 @@ VM이 현재 **Pod** 네트워킹에 연결된 단일 인터페이스를 기본�
 
 3. 위에서 생성한 `vmexamples/vlan01 네트워크 연결 정의를 추가하고, **Save**를 클릭합니다.
 
-   <img src="new_images/78_fedora02_network_add_vlan.png" title="100px" alt="네트워크 인터페이스 세부 설정"></img> <br>
+   <img src="new_images/78_fedora02_network_add_vlan.png" title="100px" alt="네트워크 인터페이스 세부 설정"> <br>
 <br>
 
 
@@ -111,30 +111,30 @@ VM이 현재 **Pod** 네트워킹에 연결된 단일 인터페이스를 기본�
 
    `eth1` 인터페이스는 플랫 네트워크(`192.168.3.x/24`)에서 IP 주소를 얻습니다. 해당 네트워크에는 IP를 제공하는 DHCP 서버가 있습니다.
 
-   <img src="new_images/80_fedora02_vm_network.png" title="100px" alt="가상머신 네트워크 인터페이스 확인"></img> <br>
+   <img src="new_images/80_fedora02_vm_network.png" title="100px" alt="가상머신 네트워크 인터페이스 확인"> <br>
 <br>
 
 6. **Console** 탭에서도 추가된 인터페이스를 확인 할 수 있습니다.
 
-   <img src="new_images/82_fedora02_console_ip.png" title="100px" alt="가상머신 Console 확인"></img> <br>
+   <img src="new_images/82_fedora02_console_ip.png" title="100px" alt="가상머신 Console 확인"> <br>
 <br>
 
 7. (선택 사항) fedora 계정/패스워드로 접속허용을 위해 sshd 설정을 변경합니다.
    **Console** 탭으로 이동하여 터미널에 접속한 후, sudo로 계정을 스위치 합니다.
    
-   <img src="new_images/177_fedora_console.png" title="100px" alt="가상머신 Console 접속"></img> <br>
+   <img src="new_images/177_fedora_console.png" title="100px" alt="가상머신 Console 접속"> <br>
 <br>
 
    **sshd** 설정 변경을 위해 설정 파일을 vi로 오픈합니다.
    ```bash
    vi /etc/ssh/sshd_config
    ```
-   <img src="new_images/178_sshd_config.png" title="100px" alt="가상머신 sshd 설정 파일"></img> <br>
+   <img src="new_images/178_sshd_config.png" title="100px" alt="가상머신 sshd 설정 파일"> <br>
 <br>
 
    설정 파일에 **PasswordAuthentication yes** 을 추가합니다.
 
-   <img src="new_images/179_sshd_config_update.png" title="100px" alt="가상머신 sshd 옵션 추가"></img> <br>
+   <img src="new_images/179_sshd_config_update.png" title="100px" alt="가상머신 sshd 옵션 추가"> <br>
 <br>
 
 8. 설정을 저장하고, 반영을 위해 sshd 서비스를 재 시작합니다.
@@ -151,7 +151,7 @@ VM이 현재 **Pod** 네트워킹에 연결된 단일 인터페이스를 기본�
    1. 웹 브라우저에서 제공 받은 `hypervisor.khsqt.dynamic.redhatworkshops.io` 주소를 이용하여 `https://hypervisor.khsqt.dynamic.redhatworkshops.io:9090`으로 접속합니다. <br>
       제공받은 주소는 다를 수 있으므로 대체해서 접속해야 합니다.
 
-      <img src="new_images/83_cockpit.png" title="100px" alt="가상머신 Cockpit 연결"></img> <br>
+      <img src="new_images/83_cockpit.png" title="100px" alt="가상머신 Cockpit 연결"> <br>
 
    2. 터미널 메뉴를 선택하고, 자신의 IP를 확인한 후, 서버에 접속합니다.
 
@@ -169,7 +169,7 @@ VM이 현재 **Pod** 네트워킹에 연결된 단일 인터페이스를 기본�
       ```
       
       실행 결과는 다음과 같습니다.
-      <img src="new_images/181_ssh_connect.png" title="100px" alt="가상머신의 SSH 연결 확인"></img> <br>
+      <img src="new_images/181_ssh_connect.png" title="100px" alt="가상머신의 SSH 연결 확인"> <br>
       
 > [!NOTE]
 > 노드에 할당된 IP를 가지고 기존 IP를 교체합니다.
