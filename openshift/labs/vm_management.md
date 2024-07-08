@@ -35,12 +35,12 @@
 
 2. 목록에서 *가상머신* `fedora02`를 선택합니다.
 
-   <img src="new_images/63_fedora02_vm.png" title="100px" alt="fedora02 가상머신 선택"></img> <br>
+   <img src="new_images/63_fedora02_vm.png" title="100px" alt="fedora02 가상머신 선택"> <br>
 <br>
 
 3. 오른쪽 상단 드롭다운인 **Actions**을 눌러 사용 가능한 옵션을 나열합니다.
 
-   <img src="new_images/64_fedora02_actions.png" title="100px" alt="가상머신 작업 리스트"></img> <br> 
+   <img src="new_images/64_fedora02_actions.png" title="100px" alt="가상머신 작업 리스트"> <br> 
 
    1. **Stop**: *가상머신*의 정상적인 종료를 시작합니다.
 
@@ -51,27 +51,27 @@
 
 4. **Stop**을 누르고 *가상머신*이 `Stopped` 상태가 될 때까지 기다립니다.
 
-   <img src="new_images/65_fedora02_vm_stop.png" title="100px" alt="가상머신 작업 - 중지"></img> <br>
+   <img src="new_images/65_fedora02_vm_stop.png" title="100px" alt="가상머신 작업 - 중지"> <br>
 <br>
 
 5. **Actions**을 클릭하면 **Start** 옵션이 나타나고 **Restart** 및 **Pause** 옵션이 회색으로 표시됩니다.
 
-   <img src="new_images/66_fedora02_vm_status.png" title="100px" alt="중지된 가상머신의 작업 리스트"></img> <br>
+   <img src="new_images/66_fedora02_vm_status.png" title="100px" alt="중지된 가상머신의 작업 리스트"> <br>
 <br>
 
 6. **Start**을 누르고 `Running` 상태가 될 때까지 기다린 후 **Actions** 메뉴를 사용하여 **Pause** 옵션을 누릅니다.
 
-   <img src="new_images/68_fedora02_vm_pause_2.png" title="100px" alt="가상머신 작업 - 일시 중지"></img> <br>
+   <img src="new_images/68_fedora02_vm_pause_2.png" title="100px" alt="가상머신 작업 - 일시 중지"> <br>
 <br>
 
 7. *가상머신* 상태가 `Paused`으로 변경됩니다.
 
-   <img src="new_images/69_fedora02_vm_pause_status.png" title="100px" alt="가상머신 작업 - 일시 중지된 가상머신"></img> <br>
+   <img src="new_images/69_fedora02_vm_pause_status.png" title="100px" alt="가상머신 작업 - 일시 중지된 가상머신"> <br>
 <br>
 
 8. **Actions** 메뉴에서 **Unpause** 클릭하여 *가상머신*의 일시 중지를 해제합니다.
 
-   <img src="new_images/69_fedora02_vm_unpause_2.png" title="100px" alt="가상머신 작업 - 가상머신 일시 중지 해제"></img> <br>
+   <img src="new_images/69_fedora02_vm_unpause_2.png" title="100px" alt="가상머신 작업 - 가상머신 일시 중지 해제"> <br>
 <br>
 
 ### 2.2 가상머신 라이브 마이그레이션
@@ -82,22 +82,22 @@
 
 1. **Details** 탭으로 이동하여 워커 노드가 실행 중인 위치를 확인합니다.
 
-   <img src="new_images/70_fedora02_vm_node.png" title="100px" alt="가상머신 실행 위치 확인"></img> <br>
+   <img src="new_images/70_fedora02_vm_node.png" title="100px" alt="가상머신 실행 위치 확인"> <br>
 <br>
 
 2. **Actions** 메뉴를 사용하여 **Migrate**를 누릅니다.
 
-   <img src="new_images/71_fedora02_migrate.png" title="100px" alt="가상머신 작업 - 마이그레이션"></img> <br>
+   <img src="new_images/71_fedora02_migrate.png" title="100px" alt="가상머신 작업 - 마이그레이션"> <br>
 <br>
 
 3. 몇 초 후에 가상머신의 상태가 `Migrating`으로 변경됩니다. 
 
-   <img src="new_images/72_fedora02_vm_migrate_status.png" title="100px" alt="가상머신 마이그레이션 중임을 확인"></img> <br>
+   <img src="new_images/72_fedora02_vm_migrate_status.png" title="100px" alt="가상머신 마이그레이션 중임을 확인"> <br>
 <br>
 
 4. 몇 초 후에 `Running` 상태로 돌아가지만 다른 노드에 있습니다. 가상머신이 성공적으로 라이브 마이그레이션되었습니다!
 
-   <img src="new_images/73_fedora02_vm_running.png" title="100px" alt="가상머신 마이그레이션 된 위치 확인"></img> <br>
+   <img src="new_images/73_fedora02_vm_running.png" title="100px" alt="가상머신 마이그레이션 된 위치 확인"> <br>
 <br>
 <br>
 
