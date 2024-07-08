@@ -73,29 +73,7 @@
 
 IPI(Installer Provisioned Infrastructure) 방법을 사용하여 배포할 때 오픈시프트는 컨트롤러 용 하드웨어를 관리하기 위해 [Metal3](https://metal3.io/)를 사용합니다. 이로 인해 하드웨어는 클러스터에서 세 가지 다른 방식으로 표시됩니다.
 <br>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>표</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 18px;
-            text-align: left;
-        }
-        th, td {
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
 <body>
-    <h1>표</h1>
     <table>
         <tr>
             <th>이름</th>
