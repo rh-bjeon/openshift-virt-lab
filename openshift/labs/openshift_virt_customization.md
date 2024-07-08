@@ -25,13 +25,13 @@
 <br>
 
 1. **Virtualization** → **Overview**로 이동합니다.
-   <img src="new_images/42_overview2.png" title="100px" alt="가상머신 개요"></img> <br> 
+   <img src="new_images/42_overview2.png" title="100px" alt="가상머신 개요"> <br> 
    이전 단계에서 가상머신을 생성했으므로 이제 이 대시보드에서 해당 가상머신이 사용하는 리소스를 볼 수 있습니다.
 <br>
 
 2. 왼쪽 메뉴에서 **Virtualization** → **VirtualMachines**으로 돌아  갑니다.
 
-   <img src="new_images/43_vm_lists.png" title="100px" alt="가상머신 리스트"></img> <br> 
+   <img src="new_images/43_vm_lists.png" title="100px" alt="가상머신 리스트"> <br> 
 
 > [!NOTE]
 > 이전 페이지에서 생성된 가상머신이 표시되지 않으면 패널 왼쪽 상단에 있는 `vmexamples` 프로젝트가 표시되는지 다시 확인하세요.
@@ -39,19 +39,19 @@
 
 3. 오른쪽 상단 드롭다운에서 **Create** → **From template**을 선택합니다.
 
-   <img src="new_images/44_create_vm_templates.png" title="100px" alt="템플렛에서 가상머신 생성"></img> <br> 
+   <img src="new_images/44_create_vm_templates.png" title="100px" alt="템플렛에서 가상머신 생성"> <br> 
 <br>
 
 4. 검색 창에 **fedora**를 입력하여 나타난 사전 정의된 템플릿 **Fedora VM** 타일을 선택합니다.
 
-   <img src="new_images/45_fedora_select.png" title="100px" alt="Fedora 가상머신 템플릿 선택"></img> <br>
+   <img src="new_images/45_fedora_select.png" title="100px" alt="Fedora 가상머신 템플릿 선택"> <br>
 <br>
 
 5. 열린 대화 상자에서 VM의 **Name**, **Disk Source** 정보 등을 수정하여 사용자 정의 할 수 있습니다. <br>
 
    이 템플릿에는 이미 사용 가능한 디스크가 있지만 외부 웹 서버에서 다른 디스크를 가져오고 싶습니다. 이는 디스크 라이브러리에서 가상머신을 배포하기 위한 한 가지 옵션이지만 스토리지 공급자에 의존하여 디스크용 PVC 클론을 오프로드하는 것보다 느릴 수 있습니다. 여기에 사용된 QCOW2 디스크 이미지를 PVC로 가져와 가상머신 클론용 소스 디스크로 사용할 수도 있습니다. 이를 수행하는 방법에 대한 자세한 내용은 [설명서](https://docs.openshift.com/container-platform/4.13/virt/virtual_machines/importing_vms/virt-importing-virtual-machine-images-datavolumes.html)를 참조하십시오.
 
-   <img src="new_images/46_fedora_customize.png" title="100px" alt="템플렛에서 가상머신 사용자 정의 클릭"></img> <br>
+   <img src="new_images/46_fedora_customize.png" title="100px" alt="템플렛에서 가상머신 사용자 정의 클릭"> <br>
 <br>
    
    1. 이름을 `fedora02`로 지정
@@ -63,18 +63,18 @@
 
 6. 템플릿의 기본 구성으로 **Overview** 탭을 검토합니다.
 
-   <img src="new_images/50_change_resource.png" title="100px" alt="가상머신 사용자 정의 개요 확인"></img> <br>
+   <img src="new_images/50_change_resource.png" title="100px" alt="가상머신 사용자 정의 개요 확인"> <br>
 <br>
 
 7. 가상 머신의 리소스 할당을 조정하기 위해 **CPU | Memory** 링크를 클릭하고, CPU 수를 2로, 메모리를 4GiB로 변경합니다.
 
-   <img src="new_images/51_change_resource2.png" title="100px" alt="가상머신 사용자 정의 CPU / Memory 설정"></img> <br>
+   <img src="new_images/51_change_resource2.png" title="100px" alt="가상머신 사용자 정의 CPU / Memory 설정"> <br>
    변경 후 **Save**를 누릅니다.
 <br>
 
 8. **Scheduling** 탭으로 이동하여 수정하지 않고 사용 가능한 옵션을 검토합니다.
 
-   <img src="new_images/52_scheduling.png" title="100px" alt="가상머신 사용자 정의 스케줄링 확인"></img> <br>
+   <img src="new_images/52_scheduling.png" title="100px" alt="가상머신 사용자 정의 스케줄링 확인"> <br>
 
    * **Node selector**는 가상머신이 실행될 수 있는 하나 이상의 클러스터 노드를 지정하는 데 사용됩니다. 이름, 레이블 또는 주석별로 선택할 수 있습니다.
    * **Tolerations**는 클러스터 노드에 taint(손상/오염)이 적용된 경우에 사용됩니다. Taint(손상/오염)은 이를 허용하는 특정 워크로드만 노드에서 실행되도록 허용해야 함을 나타내는 지표입니다. 예를 들어 GPU가 있는 노드가 일부만 있는 경우에, GPU를 사용하는 가상머신만 해당 노드에서 실행할 수 있도록 하는 경우에 유용합니다.
@@ -86,15 +86,15 @@
 
 11. **Network Interfaces** 탭으로 이동하여 기본적으로 가상머신이 `Pod networking`(오픈시프트 내부 네트워킹)에 연결되어 있는지 확인합니다.
 
-    <img src="new_images/53_networking_interfaces.png" title="100px" alt="가상머신 사용자 정의 네트워킹 인터페이스"></img> <br>
+    <img src="new_images/53_networking_interfaces.png" title="100px" alt="가상머신 사용자 정의 네트워킹 인터페이스"> <br>
 <br>
 
 12. 세 개의 수직 점 아이콘을 클릭하여 `default`을 편집하고 기본 옵션을 검토합니다.
 
-    <img src="new_images/53_networking_interfaces_default.png" title="100px" alt="가상머신 사용자 정의 네트워킹 인터페이스 옵션 선택"></img> <br>
+    <img src="new_images/53_networking_interfaces_default.png" title="100px" alt="가상머신 사용자 정의 네트워킹 인터페이스 옵션 선택"> <br>
 
     **Edit network interface** 대화창을 확인합니다.
-    <img src="new_images/54_confirm.png" title="100px" alt="가상머신 사용자 정의 네트워킹 인터페이스 옵션"></img> <br>
+    <img src="new_images/54_confirm.png" title="100px" alt="가상머신 사용자 정의 네트워킹 인터페이스 옵션"> <br>
 
     * **Model**은 사용될 네트워크 어댑터의 유형을 나타냅니다. `virtio`는 반가상화 NIC인 반면 e1000 및 기타는 에뮬레이트된 장치입니다.
     * 사용 가능한 다른 네트워크가 없기 때문에 **네트워크(Network)** 가 회색으로 표시됩니다. 이 워크숍의 향후 모듈에서는 가상머신용 추가 네트워크를 추가하고 이를 사용하겠습니다.
@@ -106,17 +106,17 @@
 
 13. **Disks** 탭으로 이동하여 가상머신에 할당된 장치를 확인합니다.
 
-    <img src="new_images/55_fedora_disks.png" title="100px" alt="가상머신 사용자 정의 스토리지"></img> <br>
+    <img src="new_images/55_fedora_disks.png" title="100px" alt="가상머신 사용자 정의 스토리지"> <br>
 
     가상머신을 만들기 전에 새 디스크를 추가하고 기본 디스크를 수정할 수 있습니다. 또한 *Storage class*와 부팅 *Source*(예: ISO에서 부팅)를 수정하고 *Interface*를 기본 `virtio`로 사용하는 대신 디스크 인터페이스를 정의할 수 있습니다.
 <br>
 
 14. 세 개의 수직 점 아이콘을 클릭하여 `루트디스크(rootdisk)`를 편집하고 기본 옵션을 검토합니다.
 
-    <img src="new_images/56_fedora_disk_edit.png" title="100px" alt="가상머신 사용자 정의 스토리지 설정"></img> <br>
+    <img src="new_images/56_fedora_disk_edit.png" title="100px" alt="가상머신 사용자 정의 스토리지 설정"> <br>
     
     **Edit disk** 대화창에 다음 값을 입력합니다.
-    <img src="new_images/57_confirm.png" title="100px" alt="가상머신 사용자 정의 스토리지 설정"></img> <br>
+    <img src="new_images/57_confirm.png" title="100px" alt="가상머신 사용자 정의 스토리지 설정"> <br>
 
     * **PertantVolumeClaim size**는 가상머신에 연결된 디스크의 크기입니다. 디스크 소스가 다른 PVC인 경우 소스보다 작을 수 없습니다. 그렇지 않으면 가져오는 QCOW2 또는 ISO를 저장할 수 있을 만큼 충분히 큰지 확인해야 합니다.
     * 디스크 **Type**은 예를 들어 CD-ROM 장치로 변경될 수 있습니다.
@@ -129,7 +129,7 @@
 
 15. **스크립트(Scripts)** 탭으로 이동합니다. 이 탭은 배포 시 cloud-init 또는 Sysprep과 같은 게스트 운영체제 사용자 지정을 적용하는 데 사용됩니다.
 
-    <img src="new_images/58_fedora_scripts.png" title="100px" alt="가상머신 사용자 정의 스크립트"></img> <br>
+    <img src="new_images/58_fedora_scripts.png" title="100px" alt="가상머신 사용자 정의 스크립트"> <br>
 
     * **Cloud-init**는 GUI 대화 상자를 사용하거나 고급 구성을 위해 표준 YAML 스크립트를 사용하여 구성할 수 있습니다. 다음 단계에서는 이 정보를 설정 하겠습니다.
     * 선택적으로 한 명 이상의 사용자가 암호 없이 가상머신에 연결할 수 있도록 **Authorized SSH key**가 제공될 수 있습니다. 이 SSH 키는 `시크릿(Secret)`로 저장될 수 있으며 원하는 경우 새 리눅스 가상머신에 자동으로 적용될 수 있습니다.
@@ -138,16 +138,16 @@
 
 16. Fedora 가상머신을 위해 **Cloud-init** 섹션에서 **Edit**을 누릅니다.
 
-    <img src="new_images/58_fedora_scripts_2.png" title="100px" alt="가상머신 사용자 정의 스크립트 - cloud-init"></img> <br>
+    <img src="new_images/58_fedora_scripts_2.png" title="100px" alt="가상머신 사용자 정의 스크립트 - cloud-init"> <br>
     
     `fedora` 사용자의 비밀번호 `ocpVirtIsGre@t`를 지정합니다. 완료되면 **Apply**를 클릭하세요.
-    <img src="new_images/59_fedora_cloud_init_password.png" title="100px" alt="가상머신 사용자 정의 스크립트 암호 설정"></img> <br>
+    <img src="new_images/59_fedora_cloud_init_password.png" title="100px" alt="가상머신 사용자 정의 스크립트 암호 설정"> <br>
     여기서 해당 상자를 선택하여 네트워크 구성 정보를 지정할 수도 있습니다. 예를 들어 가상머신을 VLAN 네트워크에 직접 연결하고 고정 IP 주소를 구성하려는 경우에 유용합니다.
 <br>
 
 17. **Create VirtualMachine**을 눌러 생성 후 **Start this VirtualMachine after creation** 옵션이 선택되어 있는지 확인합니다.
 
-    <img src="new_images/60_create_vm_new.png" title="100px" alt="가상머신 사용자 정의 생성 및 리뷰"></img> <br>
+    <img src="new_images/60_create_vm_new.png" title="100px" alt="가상머신 사용자 정의 생성 및 리뷰"> <br>
 
 > [!NOTE]
 > *Start this VirtualMachine after creation* 상자를 선택하는 것을 잊은 경우 가상머신이 생성되고 `Stopped` 상태라면 패널 오른쪽 상단에 있는 작업 드롭다운을 클릭하고 **Start** 을 선택합니다.
@@ -155,14 +155,14 @@
 
 17. 가상머신이 실행되면 **Overview**를 확인합니다.
 
-    <img src="new_images/61_fedora02_overview.png" title="100px" alt="가상머신 fedora02 개요"></img> <br>
+    <img src="new_images/61_fedora02_overview.png" title="100px" alt="가상머신 fedora02 개요"> <br>
     * **Name**이 `fedora02`인 것을 확인
     * **CPU|Memory**가 `2CPU|4Gib Memory`인 것을 확인
 <br>
 
 18. **Console** 탭을 사용하여 자유롭게 연결하세요. 사용자는 `fedora`이고 비밀번호는 이전에 지정한 비밀번호입니다(예: `ocpVirtIsGre@t`).
 
-    <img src="new_images/62_fedora_console_login.png" title="100px" alt="가상머신 fedora02 콘솔"></img> <br>
+    <img src="new_images/62_fedora_console_login.png" title="100px" alt="가상머신 fedora02 콘솔"> <br>
 <br>
 <br>
 
