@@ -72,11 +72,54 @@
 <br>
 
 IPI(Installer Provisioned Infrastructure) 방법을 사용하여 배포할 때 오픈시프트는 컨트롤러 용 하드웨어를 관리하기 위해 [Metal3](https://metal3.io/)를 사용합니다. 이로 인해 하드웨어는 클러스터에서 세 가지 다른 방식으로 표시됩니다.
-|$\color{lime}{\texttt{이름}}$|$\color{lime}{\texttt{설명}}$|
-|:---:|:---|
-|[`Node`](https://docs.openshift.com/container-platform/4.15/nodes/index.html)|<ul><li>쿠버네티스 스케줄러에서 확인하고 사용</li><li>클러스터에서 사용 가능한 리소스를 나타내는 개체</li></ul>|
-|[`Machine`](https://docs.openshift.com/container-platform/4.15/machine_management/index.html)|<ul><li>인프라 제공자가 관리하는 개체</li><li>실습에서 오픈시프트 가상화를 사용할 때, Metal3 오퍼레이터에 의해 추상화되는 물리적 서버</li><li>MachineSet 패러다임을 통해 세트로 그룹화되고 관리</li>|
-|`BareMetalHost`|<ul><li>물리적 서버 관리와 가장 낮은 수준의 직접적인 상호 작용하는 개체</li></ul>|
+<br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>표</h1>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>Node</td>
+            <td>쿠버네티스 스케줄러에서 확인하고 사용</td>
+            <td>클러스터에서 사용 가능한 리소스를 나타내는 개체</td>
+        </tr>
+        <tr>
+            <td>Machine</td>
+            <td>인프라 제공자가 관리하는 개체</td>
+        </tr>
+        <tr>
+            <td>데이터 5</td>
+            <td>데이터 6</td>
+        </tr>
+        <tr>
+            <td>데이터 7</td>
+            <td>데이터 8</td>
+        </tr>
+    </table>
+</body>
 <br>
 
 ### 2.1 노드와 머신
