@@ -28,6 +28,29 @@
 * Amazon Web Services(AWS) 베어메탈 인스턴스는 Technical Preview입니다. 자세한 내용은 [AWS 베어메탈 노드에 오픈시프트 가상화 배포](https://access.redhat.com/articles/6409731)를 참조하세요.
 * IBM 클라우드 베어메탈 서버는 Technocal Preview입니다. 자세한 내용은 [IBM 클라우드 베어메탈 노드에 오픈시프트 가상화 배포](https://access.redhat.com/articles/6738731)를 참조하세요.
 <br>
+    <style>
+        .note {
+            border-left: 4px solid #007bff;
+            background-color: #f9f9f9;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+        .note-title {
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="note">
+        <div class="note-title">NOTE</div>
+        <div class="note-content">
+            AWS 베어메탈 인스턴스 또는 IBM 클라우드 베어메탈 서버에 오픈시프트 가상화를 설치하는 것은 Technical Preview 기능입니다. Technical Preview 기능은 레드햇 프로덕션 서비스 수준 계약(SLA)에서 지원되지 않으며 기능적으로 완전하지 않을 수도 있습니다. 레드햇은 이를 프로덕션 환경에서 사용하는 것을 권장하지 않습니다. 이러한 기능은 향후 제품 기능에 대한 조기 액세스를 제공하므로 고객은 개발 프로세스 중에 기능을 테스트하고 피드백을 제공할 수 있습니다.
+        </div>
+    </div>
+</body>
+
 
 > [!NOTE]
 > AWS 베어메탈 인스턴스 또는 IBM 클라우드 베어메탈 서버에 오픈시프트 가상화를 설치하는 것은 Technical Preview 기능입니다. Technical Preview 기능은 레드햇 프로덕션 서비스 수준 계약(SLA)에서 지원되지 않으며 기능적으로 완전하지 않을 수도 있습니다. 레드햇은 이를 프로덕션 환경에서 사용하는 것을 권장하지 않습니다. 이러한 기능은 향후 제품 기능에 대한 조기 액세스를 제공하므로 고객은 개발 프로세스 중에 기능을 테스트하고 피드백을 제공할 수 있습니다.
