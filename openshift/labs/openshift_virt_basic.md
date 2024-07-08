@@ -176,8 +176,11 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
    <img src="new_images/20_fedora_cloud_init.png" title="100px" alt="페도라 가상머신 용 cloud-init"> <br> 
 <br>
 
-8. 하이퍼바이저에 인스턴스는 정보를 표시하고 인스턴스의 디스크 정지와 같은 작업을 조정하기 위해 게스트 에이전트를 실행 중입니다.
-
+8. 하이퍼바이저에 인스턴스는 정보를 표시하고 인스턴스의 디스크 정지와 같은 작업을 조정하기 위해 게스트 에이전트를 실행 중입니다. <br>
+   아래 명령어를 실행하여 확인합니다.
+   ```bash
+      systemctl | grep agent
+   ```
    <img src="new_images/21_fedora_agent.png" title="100px" alt="페도라 가상머신 내 게스트 에이전트 실행"> <br> 
 <br>
 
