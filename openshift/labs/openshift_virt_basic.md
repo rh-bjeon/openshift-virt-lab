@@ -22,18 +22,18 @@
 Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에 대한 상태 정보와 함께 사용된 가상머신 및 리소스에 대한 클러스터 수준 보기를 제공합니다. 오픈시프트 가상화에서 일어나는 일을 빠르고 개괄적으로 파악하려는 관리자에게 유용한 시작점입니다.
 
 1. 왼쪽 탐색 메뉴에서 **Virtualization** → **Overview**로 이동합니다. 
-   <img src="new_images/01_overview.png" title="100px" alt="가상머신 생성하기 개요"></img> <br> 
+   <img src="new_images/01_overview.png" title="100px" alt="가상머신 생성하기 개요"> <br> 
    Overview 페이지는 오픈시프트 가상화 관리자에게 클러스터에 있는 가상머신의 글로벌 개요를 제공합니다. 일반 사용자는 자신의 프로젝트에 있는 가상머신만 볼 수 있습니다.
 
 > [!NOTE]
-> `Getting started resources` 패널이 표시되면, 해당 링크를 사용하여 가상머신을 생성하고 가상머신에 대한 사용자 지정 부팅 소스를 업로드하는 방법에 대한 단계별 안내를 하는 Quick Starts를 포함하여 오픈시프트 가상화에 대한 자세한 정보에 액세스할 수 있습니다. 패널 오른쪽 상단에 있는 점 3개 메뉴를 사용하여 패널을 숨길 수 있습니다. <img src="new_images/02_quick_starts.png" title="100px" alt="가상머신 생성하기 퀵스타트"></img>
+> `Getting started resources` 패널이 표시되면, 해당 링크를 사용하여 가상머신을 생성하고 가상머신에 대한 사용자 지정 부팅 소스를 업로드하는 방법에 대한 단계별 안내를 하는 Quick Starts를 포함하여 오픈시프트 가상화에 대한 자세한 정보에 액세스할 수 있습니다. 패널 오른쪽 상단에 있는 점 3개 메뉴를 사용하여 패널을 숨길 수 있습니다. <img src="new_images/02_quick_starts.png" title="100px" alt="가상머신 생성하기 퀵스타트">
 <br>
 
 2. **Virtualization** → **Top consumers**를 검토합니다.
    
    페이지에서 아래로 스크롤하면 CPU, 메모리, 스토리지를 비롯한 다양한 리소스의 "최상위 소비자(Top consumers)"인 가상머신이 표시됩니다. 새로 생성된 클러스터에는 소비자가 없으므로 처음에는 볼 것이 거의 없습니다. "View virtualization dashboard"를 클릭하여 측정항목을 더 자세히 알아볼 수도 있습니다. 그러면 더 많은 데이터와 그래프가 포함된 KubeVirt 측정항목 대시보드가 표시됩니다.
 
-   <img src="new_images/03_top_consumers.png" title="100px" alt="상위 소비자 가상머신"></img> <br> 
+   <img src="new_images/03_top_consumers.png" title="100px" alt="상위 소비자 가상머신"> <br> 
 
 > [!IMPORTANT]
 > 여기에 리소스가 표시되지 않으면 랩에서 가상머신이 시작되지 않은 것입니다. Overview 세부정보를 보려면 이 세그먼트 이후에 이 페이지를 다시 방문하세요.
@@ -56,7 +56,7 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 
 1. 왼쪽 메뉴에서 **Virtualization** → **VirtualMachines**로 이동합니다.
    
-   <img src="lab-images/virt_basic--2.1.1_Left_Menu.png" height="35%" width="35%" title="100px" alt="왼쪽 메뉴 - 가상화"></img> <br>
+   <img src="lab-images/virt_basic--2.1.1_Left_Menu.png" height="35%" width="35%" title="100px" alt="왼쪽 메뉴 - 가상화"> <br>
 
 > [!NOTE]
 > **Virtualization** 메뉴는 레드햇 오픈시프트 가상화가 설치되고 올바르게 구성된 경우에만 사용할 수 있습니다.
@@ -64,50 +64,50 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 
 2. 가상머신이 없기 때문에 현재 비어 있는 것으로 **VirtualMachines** 대시보드가 표시되는지 확인합니다.
    
-   <img src="new_images/04_ocp_virt_dashboard.png" title="100px" alt="가상머신 대시보드"></img> <br>
+   <img src="new_images/04_ocp_virt_dashboard.png" title="100px" alt="가상머신 대시보드"> <br>
 <br>
 
 3. 가상머신을 만들기 전에 새 프로젝트를 만들어야 합니다. 가상머신은 기본적으로 네임스페이스에 대한 권한이 없는 사용자가 액세스, 관리 또는 제어할 수 없는 특정 프로젝트 또는 네임스페이스에 배포됩니다. 관리자는 모든 프로젝트에 액세스할 수 있으므로 모든 가상머신을 볼 수 있지만 일반 사용자에게는 필요에 따라 프로젝트에 대한 액세스 권한을 부여해야 합니다.
 
    1. **프로젝트: 모든 프로젝트**를 클릭한 다음 **프로젝트 만들기**를 클릭합니다.
-      <img src="new_images/05_project.png" title="100px" alt="모든 프로젝트 선택"></img> <br> 
+      <img src="new_images/05_project.png" title="100px" alt="모든 프로젝트 선택"> <br> 
 
    2. **이름** 필드에 `vmexamples`를 입력하여 프로젝트 이름을 입력한 다음 **만들기** 를 클릭합니다.
-      <img src="new_images/06_project_name.png" title="100px" alt="프로젝트 생성하기"></img> <br> 
+      <img src="new_images/06_project_name.png" title="100px" alt="프로젝트 생성하기"> <br> 
 <br>
 
 4. 프로젝트가 `vxexamples`인 것을 확인하고 **Create VirtualMachine**을 클릭합니다.
 
-   <img src="new_images/07_vmexamples_project.png" title="100px" alt="가상머신 생성하기"></img> <br>
+   <img src="new_images/07_vmexamples_project.png" title="100px" alt="가상머신 생성하기"> <br>
 
    사용 가능한 사전 정의된 가상머신 템플릿을 보여주는 대시보드가 나타납니다.
-   <img src="new_images/08_vm_catalogs.png" title="100px" alt="가상머신 템플릿 생성하기"></img> <br>
+   <img src="new_images/08_vm_catalogs.png" title="100px" alt="가상머신 템플릿 생성하기"> <br>
    사용 가능한 템플릿 목록을 검토하면 일부 템플릿에는 "Source available"을 나타내는 파란색 배지가 있음을 알 수 있습니다. 자동으로 다운로드되어 저장된 템플릿 디스크를 사용하는 템플릿입니다. 자체 환경에 배포하는 경우 이러한 소스 디스크가 생성되지 않도록 방지하고 해당 소스 디스크를 제거한 다음 조직을 위한 사용자 지정 디스크를 생성하고 업로드할 수 있는 옵션이 있습니다.
 <br>
 
 5. 찾기에서 fedora 입력하여 **Fedora VM** 타일을 선택합니다.
 
-   <img src="new_images/09_fedora.png" title="100px" alt="페도라 가상머신 템플릿 찾기"></img> <br> 
+   <img src="new_images/09_fedora.png" title="100px" alt="페도라 가상머신 템플릿 찾기"> <br> 
 <br>
 
 6. **Fedora VM** 템플릿 대화 상자를 확인합니다.
 
-   <img src="new_images/10_fedora_vm_templates.png" title="100px" alt="페도라 가상머신 템플릿"></img> <br> 
+   <img src="new_images/10_fedora_vm_templates.png" title="100px" alt="페도라 가상머신 템플릿"> <br> 
 <br>
 
 7. 이름을 `fedora01`로 변경하고 **Quick create VirtualMachine**을 누릅니다.
 
-   <img src="new_images/11_change_fedora_name.png" title="100px" alt="가상머신 이름 지정"></img> <br> 
+   <img src="new_images/11_change_fedora_name.png" title="100px" alt="가상머신 이름 지정"> <br> 
 <br>
 
 8. 몇 초 후에 가상머신의 Status가 `Running`으로 바뀔 것 입니다. 이 시간 동안 스토리지 공급자는 새로 생성된 가상머신에서 사용할 수 있도록 템플릿 디스크를 복제했습니다. 소요되는 시간은 스토리지 제공업체에 따라 다릅니다.
 
-   <img src="new_images/12_fedora_running.png" title="100px" alt="페도라 가상머신 실행"></img> <br> 
+   <img src="new_images/12_fedora_running.png" title="100px" alt="페도라 가상머신 실행"> <br> 
 <br>
 
 9. 가상머신이 생성된 후 **Events** 탭을 검사하여 프로세스의 일부 세부 정보를 확인합니다. 가상머신 생성에 문제가 있는 경우에 이 탭에 표시됩니다.
 
-   <img src="new_images/13_events.png" title="100px" alt="페도라 가상머신 이벤트"></img> <br> 
+   <img src="new_images/13_events.png" title="100px" alt="페도라 가상머신 이벤트"> <br> 
 
    * *DataVolume*이 생성됩니다. *DataVolume*은 가상머신 디스크 생성을 관리하고 가상머신 생성 흐름 중에 오픈시프트 네이티브 스토리지에 대한 복제 또는 가져오기 프로세스를 추상화하는 데 사용됩니다.
    * 가상머신이 시작되었습니다.
@@ -117,7 +117,7 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 
     SDN(소프트웨어 정의 네트워크)에 있는 가상머신의 IP 주소, 부팅 순서, 워크로드 프로필, 가상 머신을 호스팅하는 클러스터 노드 등에 대한 정보들이 함께 여기에 표시됩니다.
 
-    <img src="new_images/14_os_info.png" title="100px" alt="페도라 가상머신 상세정보"></img> <br> 
+    <img src="new_images/14_os_info.png" title="100px" alt="페도라 가상머신 상세정보"> <br> 
 <br>
 
 ### 2.2 가상머신 액세스
@@ -126,17 +126,17 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 
 1. **Console** 탭을 클릭하여 가상머신 콘솔에 액세스합니다.
 
-   <img src="new_images/15_fedora_console.png" title="100px" alt="페도라 가상머신 콘솔"></img> <br> 
+   <img src="new_images/15_fedora_console.png" title="100px" alt="페도라 가상머신 콘솔"> <br> 
 <br>
 
 2. `fedora` 사용자의 생성된 비밀번호를 보려면 **Guest login credentials**을 클릭합니다. 이는 오픈시프트 가상화의 기본 템플릿에서 제공되는 cloud-init를 사용하여 비밀번호를 설정한, 사용자 정의 가상머신의 경우에만 표시됩니다.
 
-   <img src="new_images/15_fedora_console_credentials.png" title="100px" alt="페도라 가상머신 콘솔 암호"></img> <br> 
+   <img src="new_images/15_fedora_console_credentials.png" title="100px" alt="페도라 가상머신 콘솔 암호"> <br> 
 <br>
 
 3. `fedora` 사용자와 표시된 비밀번호를 사용하여 가상머신에 로그인합니다.
 
-   <img src="new_images/16_fedora_console_02.png" title="100px" alt="사용자 ID와 암호 입력"></img> <br> 
+   <img src="new_images/16_fedora_console_02.png" title="100px" alt="사용자 ID와 암호 입력"> <br> 
 
 > [!IMPORTANT]
 > 비밀번호를 복사한 후 `붙여넣기(Paste)`를 클릭하여 비밀번호를 붙여넣을 수 있습니다.
@@ -147,14 +147,14 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 
 4. 로그인한 후 `ip a` 명령을 실행하여 인터페이스와 IP 주소를 표시합니다.
 
-   <img src="new_images/17_fedora_ipa_command.png" title="100px" alt="페도라 가상머신 IP 주소 확인"></img> <br> 
+   <img src="new_images/17_fedora_ipa_command.png" title="100px" alt="페도라 가상머신 IP 주소 확인"> <br> 
 
    가상머신의 네트워크 어댑터는 SDN에 연결되어 있으므로 할당된 IP 주소는 *KVM 하이퍼바이저*에서 사용하는 내부 IP 주소이며 외부에서 액세스할 수 있는 IP가 아닙니다. 가상머신이 다른 노드로 라이브 마이그레이션되고 SDN에 연결된 외부 IP가 변경되더라도 가상머신의 IP는 변경되지 않습니다.
 <br>
 
 5. `lsblk`를 실행하여 디스크 목록과 해당 용량, 여유 공간을 표시합니다.
 
-   <img src="new_images/18_fedora_lsblk_command.png" title="100px" alt="페도라 가상머신 블록 디바이스 확인"></img> <br> 
+   <img src="new_images/18_fedora_lsblk_command.png" title="100px" alt="페도라 가상머신 블록 디바이스 확인"> <br> 
 
    * `/dev/vda`는 가상머신 생성 중에 생성된 디스크이며 생성 시 지정된 크기입니다.
    * `/dev/vdb`는 `cloud-init`으로 필수 데이터(예: `fedora` 사용자 비밀번호 등) 구성에 사용됩니다. 이 디스크는 가상머신이 생성된 후 제거될 수 있습니다.
@@ -162,22 +162,22 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 
 6. `nproc` 및 `free -m` 명령을 사용하여 가상머신과 연결된 CPU 수 및 메모리 양(생성 중에 지정된 flavor와 일치)을 검사합니다.
 
-   <img src="new_images/19_fedora_resources.png" title="100px" alt="페도라 가상머신 CPU/MEM 확인"></img> <br> 
+   <img src="new_images/19_fedora_resources.png" title="100px" alt="페도라 가상머신 CPU/MEM 확인"> <br> 
 <br>
 
 7. 게스트 사용자 정의를 검토하려면 `cloud-init` 디스크를 마운트합니다.
 
-   <img src="new_images/20_fedora_cloud_init.png" title="100px" alt="페도라 가상머신 용 cloud-init"></img> <br> 
+   <img src="new_images/20_fedora_cloud_init.png" title="100px" alt="페도라 가상머신 용 cloud-init"> <br> 
 <br>
 
 8. 하이퍼바이저에 인스턴스는 정보를 표시하고 인스턴스의 디스크 정지와 같은 작업을 조정하기 위해 게스트 에이전트를 실행 중입니다.
 
-   <img src="new_images/21_fedora_agent.png" title="100px" alt="페도라 가상머신 내 게스트 에이전트 실행"></img> <br> 
+   <img src="new_images/21_fedora_agent.png" title="100px" alt="페도라 가상머신 내 게스트 에이전트 실행"> <br> 
 <br>
 
 9. **Overview** 탭을 클릭하여 게스트 가상머신에서 얻은 정보를 표시합니다.
 
-   <img src="new_images/22_fedora_overview.png" title="100px" alt="페도라 가상머신 정보 표시"></img> <br> 
+   <img src="new_images/22_fedora_overview.png" title="100px" alt="페도라 가상머신 정보 표시"> <br> 
 
    * 호스트 이름
    * 운영체제 버전 및 타임존 정보
@@ -187,14 +187,14 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 
 10. **Metrics** 탭으로 이동하여 시간 범위 지정 등을 통해 사용량에 대한 추가 정보를 얻을 수 있습니다.
 
-    <img src="new_images/23_fedora_metrics.png" title="100px" alt="페도라 가상머신 메트릭 표시"></img> <br> 
+    <img src="new_images/23_fedora_metrics.png" title="100px" alt="페도라 가상머신 메트릭 표시"> <br> 
 <br>
 
 #### 2.2.2 가상머신과 연결된 리소스 검사
 
 **Configuration** 탭은 가상머신의 리소스에 대한 정보를 얻기 위한 진입점입니다. 여기에는 5개의 하위 탭이 포함되어 있습니다.
 
-<img src="new_images/24_fedora_configuration.png" title="100px" alt="가상머신 스케줄링 탭"></img> <br> 
+<img src="new_images/24_fedora_configuration.png" title="100px" alt="가상머신 스케줄링 탭"> <br> 
 
 * **Scheduling**: 가상머신이 실행되어야 하는 위치와 제거를 위해 따라야 할 전략을 나타내는 고급 구성이 포함됩니다. 이는 (반)친화성[(anti)affinity] 규칙을 구성하고, 노드 선택기(selector)와 허용 오차를 구성하고, 가상머신을 예약할 수 있는 클러스터 노드에 영향을 미치는 기타 동작을 구성하는 데 사용됩니다.
 * **Environment**: *ConfigMap*, *Secret*, *서비스 계정(Service Accounts)* 을 추가 디스크로 연결할 수 있습니다. 이는 가상머신에서 실행 중인 애플리케이션에 구성 데이터를 전달할 때 유용합니다.
@@ -205,14 +205,14 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 
 1. **Network interfaces** 하위 탭을 클릭하여 가상머신에 연결된 네트워크 인터페이스를 검사합니다.
 
-   <img src="new_images/25_fedora_network_interface.png" title="100px" alt="가상머신 네트워크 탭"></img> <br>
+   <img src="new_images/25_fedora_network_interface.png" title="100px" alt="가상머신 네트워크 탭"> <br>
 
    가상머신이 생성되면 기본적으로 `masquerade` 유형의 `PodNetworking` 네트워크 인터페이스가 생성됩니다. 이는 가상머신을 SDN에 연결하고 가상머신에서 오픈시프트 클러스터 외부로의 액세스를 제공합니다. 클러스터의 다른 가상머신 및 Pod는 이 인터페이스를 사용하여 가상머신에 액세스할 수 있습니다. 또한 SDN에 연결된 가상머신은 경로 또는 로드 밸런서를 사용하여 외부에서 액세스할 수 있지만 이 워크숍에서는 이에 대해 다루지 않습니다.
 <br>
 
 2. **Disks** 하위 탭을 클릭하여 가상머신과 연결된 디스크를 나열합니다.
 
-   <img src="new_images/26_fedora_storage.png" title="100px" alt="가상머신 디스크 탭"></img> <br> 
+   <img src="new_images/26_fedora_storage.png" title="100px" alt="가상머신 디스크 탭"> <br> 
 
    이 환경에서 디스크에 사용되는 저장소의 소스와 유형을 정의하는 기본 StorageClass를 `ocs-storagecluster-ceph-rbd`라고 합니다. 이 스토리지는 ODF(OpenShift Data Foundation)에서 제공하는 기본 유형입니다. 각 스토리지 제공자에는 가상머신 디스크를 지원하는 스토리지의 특성을 정의하는 다양한 스토리지 클래스가 있습니다.
 <br>
@@ -226,22 +226,22 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 
 1. 왼쪽 메뉴에서 **Virtualization** → **VirtualMachines**로 이동합니다.
 
-   <img src="lab-images/virt_basic--2.1.1_Left_Menu.png" height="35%" width="35%" title="100px" alt="왼쪽 메뉴 - 가상화"></img> <br>
+   <img src="lab-images/virt_basic--2.1.1_Left_Menu.png" height="35%" width="35%" title="100px" alt="왼쪽 메뉴 - 가상화"> <br>
 <br>
 
 2. 현재 프로젝트에서 실행 중인 가상머신이 나열됩니다.
 
-   <img src="new_images/27_vmexamples_vm_status.png" title="100px" alt="가상머신 리스트"></img> <br>
+   <img src="new_images/27_vmexamples_vm_status.png" title="100px" alt="가상머신 리스트"> <br>
 <br>
 
 3. 오른쪽 상단의 **Create** 버튼을 누르고 템플릿에서 선택합니다.
 
-   <img src="new_images/28_create_vm_templates.png" title="100px" alt="가상머신 생성 방법으로 템플릿"></img> <br>
+   <img src="new_images/28_create_vm_templates.png" title="100px" alt="가상머신 생성 방법으로 템플릿"> <br>
 <br>
 
 4. 검색 창에 *windows server* 입력 후 나타난 템플릿 중에 **Microsoft Windows Server 2019 VM** 타일을 선택합니다.
 
-   <img src="new_images/29_windows_vm_templates.png" title="100px" alt="윈도우 2019 템플릿"></img> <br>
+   <img src="new_images/29_windows_vm_templates.png" title="100px" alt="윈도우 2019 템플릿"> <br>
 <br>
 
 5. **Storage** 섹션에서 다음을 지정합니다.
@@ -254,34 +254,34 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 
 7. `Mount Windows drivers disk`가 활성화되어 있는지 확인합니다. 이는 VirtIO용 드라이버를 제공하는 윈도우 시스템을 설치하는 데 필요합니다.
 
-   <img src="new_images/31_vm_configurating.png" title="100px" alt="윈도우 2019 템플릿 패러미터"></img> <br>
+   <img src="new_images/31_vm_configurating.png" title="100px" alt="윈도우 2019 템플릿 패러미터"> <br>
 <br>
 
 
 8. 매개변수를 입력이 완료되면 **Customize VirtualMachine을**를 누르고, 변경한 이름과 Boot Disk 설정을 확인합니다.
 
-    <img src="new_images/32_window_vm_setting.png" title="100px" alt="윈도우 2019 템플릿 패러미터 채우기"></img> <br>
+    <img src="new_images/32_window_vm_setting.png" title="100px" alt="윈도우 2019 템플릿 패러미터 채우기"> <br>
 <br>
 
 9. **Disk** 메뉴에서 Book Disk 순서 변경을 위해 **installation-cdrom**의 맨 끝을 눌러 설정 편집을 진행합니다.
-    <img src="new_images/32_boot_disk_update.png" title="100px" alt="윈도우 2019 템플릿 패러미터 채우기"></img> <br>
+    <img src="new_images/32_boot_disk_update.png" title="100px" alt="윈도우 2019 템플릿 패러미터 채우기"> <br>
 <br>
 
 10. **Use this disk as a boot source**의 체크박스를 선택하고 **Save**를 누릅니다.
 
-    <img src="new_images/31_boot_disk_order_change.png" title="100px" alt="윈도우 2019 템플릿 패러미터 채우기"></img> <br>
+    <img src="new_images/31_boot_disk_order_change.png" title="100px" alt="윈도우 2019 템플릿 패러미터 채우기"> <br>
 <br>
 
 11. **Scripts** 탭으로 전환하고 `Sysprep` 섹션에서 **Edit**를 누릅니다.
 
-    <img src="new_images/33_win_scripts.png" title="100px" alt="윈도우 2019 템플릿 스크립트"></img> <br>
+    <img src="new_images/33_win_scripts.png" title="100px" alt="윈도우 2019 템플릿 스크립트"> <br>
 <br>
 
 12. **Autounattend.xml answer file** 양식을 `autounattend.xml`의 코드로 채웁니다. <br>
     **Autonattend.xml**은 Windows 설정 및 사용자 정의 소프트웨어 프로비저닝을 자동화하는 Window용 자동화 도구입니다. <br>
     기본적으로 설치마다 단계가 있는데 이 단계들에 대한 설정값을 미리 반영함으로써 사용자 입력 없이도 자동으로 설치 되도록 하는 것입니다.
 
-    <img src="new_images/35_win_sysprep.png" title="100px" alt="윈도우 2019 템플릿 스크립트"></img> <br>
+    <img src="new_images/35_win_sysprep.png" title="100px" alt="윈도우 2019 템플릿 스크립트"> <br>
 
     `autounattend.xml` 파일   
     ```xml
@@ -425,22 +425,22 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 
 13. 대화 상자에서 **저장(Save)** 을 클릭합니다.
 
-    <img src="new_images/36_win_sysprep_config.png" title="100px" alt="윈도우 2019 템플릿 sysprep"></img> <br>
+    <img src="new_images/36_win_sysprep_config.png" title="100px" alt="윈도우 2019 템플릿 sysprep"> <br>
 <br>
 
 14. **Autounattend.xml answer file**에 설정된 값을 확인 후 **Create VirtualMachine**을 누릅니다.
 
-    <img src="new_images/37_win_vm_create.png" title="100px" alt="윈도우 2019 가상머신 생성"></img> <br>
+    <img src="new_images/37_win_vm_create.png" title="100px" alt="윈도우 2019 가상머신 생성"> <br>
 <br>
 
 15. 가상머신은 ISO 이미지를 다운로드하고 인스턴스를 구성 및 시작하여 프로비저닝 프로세스를 시작합니다.
 
-    <img src="new_images/40_win_vm_provisioning.png" title="100px" alt="윈도우 2019 프로비저닝"></img> <br>
+    <img src="new_images/40_win_vm_provisioning.png" title="100px" alt="윈도우 2019 프로비저닝"> <br>
 <br>
 
 16. 몇 분 후에 가상머신의 Status 값이 `Running`으로 바뀝니다. **Console** 탭으로 전환합니다.
 
-    <img src="new_images/41_win_console.png" title="100px" alt="윈도우 2019 가상머신 콘솔"></img> <br>
+    <img src="new_images/41_win_console.png" title="100px" alt="윈도우 2019 가상머신 콘솔"> <br>
 
 > [!NOTE]
 > 이 워크숍에서는 설치가 완료될 때까지 기다릴 필요가 없습니다. 다음 모듈을 계속 진행할 수 있습니다.
