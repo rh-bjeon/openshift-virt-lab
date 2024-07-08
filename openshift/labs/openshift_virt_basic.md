@@ -165,9 +165,12 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
    <img src="new_images/19_fedora_resources.png" title="100px" alt="페도라 가상머신 CPU/MEM 확인"> <br> 
 <br>
 
-7. 게스트 사용자 정의를 검토하려면 `cloud-init` 디스크를 마운트합니다.
+7. 게스트 사용자 정의를 검토하려면 `cloud-init` 디스크를 마운트합니다. <br>
+   아래 명령어를 실행합니다.
    ```bash
       sudo mount /dev/vdb /mnt
+   ```
+   ```bash
       sudo cat /mnt/user-data; echo
    ```
    <img src="new_images/20_fedora_cloud_init.png" title="100px" alt="페도라 가상머신 용 cloud-init"> <br> 
