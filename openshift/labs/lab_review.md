@@ -64,7 +64,7 @@
 
 오픈시프트 클러스터가 배포되어 있는 구성도는 다음과 같습니다.
 
-<img src="lab-images/lab_review--2_system_layout.png" title="100px" alt="오픈시프트 클러스터 구성도"></img> <br>
+<img src="lab-images/lab_review--2_system_layout.png" title="100px" alt="오픈시프트 클러스터 구성도"> <br>
 
 * 베이스천 노드 * 1*ea*
 * 마스터 노드 * 3*ea*
@@ -91,14 +91,14 @@ IPI(Installer Provisioned Infrastructure) 방법을 사용하여 배포할 때 �
 <br>
 
 2. 탐색 메뉴에서 **컴퓨팅** → **노드**를 선택합니다.
-   <img src="lab-images/lab_review--2.1.2_Compute_Nodes.png" title="100px" alt="컴퓨트 노드"></img> <br> 
+   <img src="lab-images/lab_review--2.1.2_Compute_Nodes.png" title="100px" alt="컴퓨트 노드"> <br> 
    오픈시프트 4 클러스터에는 3개의 컨트롤-플레인 노드와 3개의 워커 노드가 있습니다. 또한 베어메탈 노드를 관리하기 위해 IPMI(Intelligent Platform Management Interface)를 사용합니다.
 
    노드는 오픈시프트 클러스터의 가상 또는 베어메탈 머신입니다. 워커 노드는 가상머신 및 기타 워크로드를 호스팅합니다. 컨트롤-플레인 노드는 오픈시프트 클러스터를 제어하고 관리하는 데 필요한 서비스를 실행합니다.
 <br>
 
 3. 노드에 대한 리소스 정보를 얻으려면 워커 노드 중 하나를 클릭하세요.
-   <img src="lab-images/lab_review--2.1.3_Worker0_Information.png" title="100px" alt="워커0 정보"></img> <br> 
+   <img src="lab-images/lab_review--2.1.3_Worker0_Information.png" title="100px" alt="워커0 정보"> <br> 
    **개요** 탭에는 CPU, 메모리 등 리소스 활용도에 대한 유용한 정보가 표시됩니다. 또한 이 노드 내부에서 실행 중인 모든 애플리케이션(**Pod**)도 표시됩니다.
 
 > [!NOTE]
@@ -106,7 +106,7 @@ IPI(Installer Provisioned Infrastructure) 방법을 사용하여 배포할 때 �
 <br>
 
 4. 운영체제에 대한 자세한 정보를 얻으려면 **세부 정보** 탭으로 이동하십시오.
-   <img src="lab-images/lab_review--2.1.4_Worker0_Details.png" title="100px" alt="워커0 상세"></img> <br>
+   <img src="lab-images/lab_review--2.1.4_Worker0_Details.png" title="100px" alt="워커0 상세"> <br>
 <br>
 
 ### 2.2 베어메탈 호스트
@@ -114,12 +114,12 @@ IPI(Installer Provisioned Infrastructure) 방법을 사용하여 배포할 때 �
 BMC(Baseboard Management Console)를 사용하면 레드햇 오픈시프트 콘솔을 사용하여 노드를 관리할 수 있습니다.
 
 1. **컴퓨팅** → **베어 메탈 호스트**를 선택합니다.
-   <img src="lab-images/lab_review--2.2.1_BMHosts.png" title="100px" alt="베어메탈 호스트"></img> <br>
+   <img src="lab-images/lab_review--2.2.1_BMHosts.png" title="100px" alt="베어메탈 호스트"> <br>
    설치 중에 **컨트롤-플레인** 노드가 프로비저닝되고(따라서 상태가 외부 프로비저닝됨) 컨트롤-플레인이 준비되면 **워커** 노드가 프로비저닝되고(프로비저닝됨 상태) 클러스터에 조인됩니다. 이 실습에는 포함되지 않지만 호스트 추가 버튼을 사용하여 새 호스트를 추가하여 클러스터를 확장할 수 있습니다.
 <br>
 
 2. 물리적(베어메탈) 노드에 대한 정보를 얻으려면 워커 노드 중 하나를 클릭하십시오.
-   <img src="lab-images/lab_review--2.2.2_Worker0_BMhost.png" title="100px" alt="워커0 베어메탈 호스트"></img> <br>
+   <img src="lab-images/lab_review--2.2.2_Worker0_BMhost.png" title="100px" alt="워커0 베어메탈 호스트"> <br>
    표시된 정보는 하드웨어 및 베어메탈 노드의 물리적 상태와 관련된 정보를 제공한다는 점을 제외하면 노드 정보와 유사합니다. **동작** 드롭다운 메뉴를 사용하면 `BMC`를 사용하여 시스템을 다시 시작하거나 중지하는 등 베어메탈 호스트의 측면을 관리할 수 있습니다.
 <br>
 
