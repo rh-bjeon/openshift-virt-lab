@@ -4,7 +4,7 @@
 1. [레이어 2 모드](./vm_load_balancing.md#1-레이어-2-모드)<br>
 2. [레이어 3 모드](./vm_load_balancing.md#2-레이어-3-모드)<br>
 3. [오퍼레이터 리뷰](./vm_load_balancing.md#3-오퍼레이터-리뷰)<br>
-   3.1 [MetalLB 오퍼레이터 확인](./vm_load_balancing.md#31-metallb-오퍼레이터-확인)
+   3.1 [MetalLB 오퍼레이터 확인](./vm_load_balancing.md#31-metallb-오퍼레이터-확인) <br>
    3.2 [IP AddressPool](./vm_load_balancing.md#32-ip-addresspool)<br>
    3.3 [레이어 2 모드 구성](./vm_load_balancing.md#33-레이어-2-모드-구성)<br>
 4. [데이터베이스 노드 외부 노출하기](./vm_load_balancing.md#4-데이터베이스-노드-외부-노출하기)<br>
