@@ -62,15 +62,15 @@
    주소는 `vcsrsxx`으로 시작합니다.
 
    **VSPHERE CLIENT 시작**을 누릅니다.<br>
-   <img src="lab-images/vm_migration--3.1.1.1_vSphere_client.png" height="50%" width="50%" title="100px" alt="vSphere 클라이언트 포탈"></img> <br> 
+   <img src="lab-images/vm_migration--3.1.1.1_vSphere_client.png" height="50%" width="50%" title="100px" alt="vSphere 클라이언트 포탈"> <br> 
 
    사용자 `%vcenter_user%` 및 비밀번호 `%vcenter_password%`로 로그인합니다.
-   <img src="new_images/107_vcenter_accounts.png" height="50%" width="50%" title="100px" alt="vSphere 클라이언트 포탈"></img> <br> 
+   <img src="new_images/107_vcenter_accounts.png" height="50%" width="50%" title="100px" alt="vSphere 클라이언트 포탈"> <br> 
 <br>
 
 3. **VM** 탭을 선택하여 가상머신 리스트를 확인합니다.
 
-   <img src="new_images/108_vm_lists.png" title="100px" alt="vSphere의 가상머신 리스트"></img> <br> 
+   <img src="new_images/108_vm_lists.png" title="100px" alt="vSphere의 가상머신 리스트"> <br> 
 
 > [!NOTE]
 > 접미사가 `_running`인 가상머신이 활성화된 가상머신입니다. 마이그레이션을 중지해야 하는 경우 마이그레이션을 위해 가상머신의 복제본이 생성되었습니다. 해당 가상머신은 해당 접미사가 없는 가상머신입니다.
@@ -78,12 +78,12 @@
 
 3. vCneter 화면에서 세그먼트를 검토하세요.
 
-   <img src="new_images/109_vm_segment.png" title="100px" alt="vSphere의 네트워크"></img> <br> 
+   <img src="new_images/109_vm_segment.png" title="100px" alt="vSphere의 네트워크"> <br> 
 <br>
 
 4. vCenter 화면에서 스토리지를 검토하세요.
 
-   <img src="new_images/110_vm_storage.png" title="100px" alt="vSphere의 데이터 소스"></img> <br> 
+   <img src="new_images/110_vm_storage.png" title="100px" alt="vSphere의 데이터 소스"> <br> 
 <br>
 
 ### 3.2 마이그레이션 툴킷에 대한 VMware 공급자 생성
@@ -93,12 +93,12 @@ MTV(Migration Toolkit for Virtualization)는 VMware Virtual Disk Development Kit
 
 1. 프로젝트 `openshift-mtv`를 선택하세요.
 
-   <img src="new_images/112_mtv_project.png" title="100px" alt="프로젝트 선택"></img> <br> 
+   <img src="new_images/112_mtv_project.png" title="100px" alt="프로젝트 선택"> <br> 
 <br>
 
 2. 기본적으로 **OpenShift Virtualization**을 대상 플랫폼으로 나타내는 `host`라는 공급자가 있습니다.
    
-   <img src="new_images/114_vm_host_providers.png" title="100px" alt="MTV 프로바이더 리스트 확인"></img> <br> 
+   <img src="new_images/114_vm_host_providers.png" title="100px" alt="MTV 프로바이더 리스트 확인"> <br> 
    이 실습환경은 이미 `vmware`라는 **VMware Provider**로 구성되어 있으며 마이그레이션 소스로 표시되어 있습니다.
 
 
@@ -108,16 +108,16 @@ MTV(Migration Toolkit for Virtualization)는 VMware Virtual Disk Development Kit
 
 1. 왼쪽 메뉴에서 **마이그레이션(Migration)** → **가상화 계획(Plans for virtualization)** 으로 이동한 후 **계획 생성(Create plan)** 을 누릅니다.
 
-   <img src="new_images/118_create_mig_plan.png" title="100px" alt="VMware 마이그레이션 계획 생성"></img> <br>
+   <img src="new_images/118_create_mig_plan.png" title="100px" alt="VMware 마이그레이션 계획 생성"> <br>
 <br>
 
 2. 마법사의 **1) Select source provider** 설정 단계에서 **VMware**를 선택합니다.
 
-   <img src="new_images/119_create_mig_plan_providers.png" title="100px" alt="VMware 마이그레이션 공급자 선택"></img> <br>
+   <img src="new_images/119_create_mig_plan_providers.png" title="100px" alt="VMware 마이그레이션 공급자 선택"> <br>
 
 3. 다음 페이지에서 마이그레이션하려는 3개의 VM을 선택합니다.
 
-  <img src="new_images/120_vm_select.png" title="100px" alt="VMware 마이그레이션 공급자 선택"></img> <br>
+  <img src="new_images/120_vm_select.png" title="100px" alt="VMware 마이그레이션 공급자 선택"> <br>
 
    * **database**
    * **winweb01**
@@ -127,7 +127,7 @@ MTV(Migration Toolkit for Virtualization)는 VMware Virtual Disk Development Kit
 
 5. 다음 화면에서는 마이그레이션 계획에 대한 세부 정보를 제공하는 작업을 수행하게 됩니다. 몇 가지 세부 정보가 이미 채워져있지만 VM이 올바른 네임스페이스에 배치되고 네트워크 및 스토리지 옵션이 올바르게 매핑되도록 몇 가지 사소한 수정을 수행해야 합니다.
 
-   <img src="new_images/121_vm_mig_plan.png" title="100px" alt="VMware 마이그레이션 계획 생성"></img> <br>
+   <img src="new_images/121_vm_mig_plan.png" title="100px" alt="VMware 마이그레이션 계획 생성"> <br>
 
 6. 다음 값으로 마이그레이션 계획을 작성하고, **Create migration plan**을 선택합니다.
 
@@ -142,31 +142,31 @@ MTV(Migration Toolkit for Virtualization)는 VMware Virtual Disk Development Kit
 
 7. 마이그레이션 계획이 준비되고 있음을 확인할 수 있는 새로운 화면으로 이동됩니다.
 
-   <img src="new_images/122_plan_not_ready.png" title="100px" alt="VMware 마이그레이션 계획 가상머신 준비 대기"></img> <br>
+   <img src="new_images/122_plan_not_ready.png" title="100px" alt="VMware 마이그레이션 계획 가상머신 준비 대기"> <br>
 <br>
 
 8. 잠시 후 계획이 준비된 상태가 됩니다. **Plan details** 아래에 녹색 **재생** 버튼을 클릭하여 마이그레이션 프로세스를 시작합니다.
 
-   <img src="new_images/123_vm_mig_plan_ready.png" title="100px" alt="VMware 마이그레이션 계획 시작"></img> <br>
+   <img src="new_images/123_vm_mig_plan_ready.png" title="100px" alt="VMware 마이그레이션 계획 시작"> <br>
 <br>
 
 9. 마이그레이션을 시작하라는 확인 상자가 표시되면 **Start** 버튼을 클릭합니다.
 
-   <img src="new_images/124_vm_mig_start.png" title="100px" alt="마이그레이션 시작 버튼"></img> <br>
+   <img src="new_images/124_vm_mig_start.png" title="100px" alt="마이그레이션 시작 버튼"> <br>
 <br>
 
 10. 마이그레이션 된 **3개의 VM 중 0개**라는 상태와 함께 진행률이 화면 중앙에 나타납니다.
 
-   <img src="new_images/125_vm_mig_details.png" title="100px" alt="VMware 마이그레이션 계획 스토리지"></img> <br>
+   <img src="new_images/125_vm_mig_details.png" title="100px" alt="VMware 마이그레이션 계획 스토리지"> <br>
 <br>
 
 11. 마이그레이션이 진행되는 것을 확인합니다.
 
     진행 중인 마이그이션 (디스크 크기 및 네트워크에 따라 디스크를 복사하는 시간이 걸립니다)
-    <img src="new_images/125_vm_mig_running.png" title="100px" alt="VMware 마이그레이션 계획 진행2"></img> <br>
+    <img src="new_images/125_vm_mig_running.png" title="100px" alt="VMware 마이그레이션 계획 진행2"> <br>
 
     시간이 지나면 마이그레이션이 완료됩니다.
-    <img src="new_images/126_vm_mig_complete_2.png" title="100px" alt="VMware 마이그레이션 계획 완료"></img> <br>
+    <img src="new_images/126_vm_mig_complete_2.png" title="100px" alt="VMware 마이그레이션 계획 완료"> <br>
 
 > [!IMPORTANT]
 > 많은 참가자가 동일한 작업을 병렬로 수행하면 이 작업이 실제 환경보다 느리게 수행될 수 있습니다. 기다려주십시오.
@@ -194,7 +194,7 @@ MTV(Migration Toolkit for Virtualization)는 VMware Virtual Disk Development Kit
 
 1. 오픈시프트 콘솔에서 **Virtualization** → **VirtualMachines**로 이동하여 마이그레이션된 가상머신을 성공적으로 가져오고 실행 중인지 확인합니다.
 
-   <img src="new_images/127_migration_vm_lists.png" title="100px" alt="VMware로부터 마이그레이션 된 가상머신 리스트 확인"></img> <br>
+   <img src="new_images/127_migration_vm_lists.png" title="100px" alt="VMware로부터 마이그레이션 된 가상머신 리스트 확인"> <br>
 
 > [!NOTE]
 > `vmexamples` 프로젝트를 선택했는지 확인하세요.
@@ -202,7 +202,7 @@ MTV(Migration Toolkit for Virtualization)는 VMware Virtual Disk Development Kit
 
 2. `winweb01`에 액세스하고 **YAML** 탭으로 이동합니다.
 
-   <img src="new_images/128_web01_vm_yaml.png" title="100px" alt="winweb01 가상머신 선택"></img> <br>
+   <img src="new_images/128_web01_vm_yaml.png" title="100px" alt="winweb01 가상머신 선택"> <br>
 <br>
 
 3. `spec:` 섹션을 찾고 `template.metadata` 아래에 다음 줄을 추가하여 가상머신 리소스에 레이블을 지정합니다.
@@ -212,11 +212,11 @@ MTV(Migration Toolkit for Virtualization)는 VMware Virtual Disk Development Kit
            env: webapp
    ```
 
-   <img src="new_images/129_vm_web01_labels.png" title="100px" alt="VMware로부터 마이그레이션 된 가상머신 YAML 파일 확인"></img> <br>
+   <img src="new_images/129_vm_web01_labels.png" title="100px" alt="VMware로부터 마이그레이션 된 가상머신 YAML 파일 확인"> <br>
    입력을 완료한 후 **저장**을 누릅니다.
    <br>
 
-   <img src="new_images/130_vm01_labels_update.png" title="100px" alt="VMware로부터 마이그레이션 된 가상머신 YAML 파일 변경된 것을 확인"></img> <br>
+   <img src="new_images/130_vm01_labels_update.png" title="100px" alt="VMware로부터 마이그레이션 된 가상머신 YAML 파일 변경된 것을 확인"> <br>
    변경된 것을 확인합니다.
 
 > [!IMPORTANT]
@@ -225,23 +225,23 @@ MTV(Migration Toolkit for Virtualization)는 VMware Virtual Disk Development Kit
 
 4. 가상머신 `winweb02`에 대해 프로세스를 반복합니다.
 
-   <img src="new_images/131_vm02_labels_update.png" title="100px" alt="VMware로부터 마이그레이션 된 가상머신 YAML 파일 변경된 것을 확인"></img> <br>
+   <img src="new_images/131_vm02_labels_update.png" title="100px" alt="VMware로부터 마이그레이션 된 가상머신 YAML 파일 변경된 것을 확인"> <br>
 <br>
 
 5. *가상 머신(Virtual Machines)* `database`, `winweb01` 및 `winweb02`를 시작합니다.
 
-   <img src="new_images/132_vm_start.png" title="100px" alt="마이그레이션 된 가상머신을 시작"></img> <br>
+   <img src="new_images/132_vm_start.png" title="100px" alt="마이그레이션 된 가상머신을 시작"> <br>
 
    각 가상머신의 콘솔 탭에 액세스하여 가상머신이 제대로 작동하는지 확인하세요.
-   <img src="new_images/133_vm_running.png" title="100px" alt="가상머신이 실행 중인 것을 확인"></img> <br>
+   <img src="new_images/133_vm_running.png" title="100px" alt="가상머신이 실행 중인 것을 확인"> <br>
 <br>
 
 6. **네트워킹** → **서비스** 로 이동하고 **서비스 만들기**를 누릅니다.
 
-   <img src="new_images/134_vm_svc.png" title="100px" alt="서비스 생성"></img> <br>
+   <img src="new_images/134_vm_svc.png" title="100px" alt="서비스 생성"> <br>
 
    가상머신에 추가한 레이블(`env=webapp`)을 기억하시나요? 여기서는 서비스가 선택기(selector)에서 해당 레이블을 사용하여 트래픽을 라우팅할 가상머신을 선택하는 것을 볼 수 있습니다.
-   <img src="new_images/135_vm_svc2.png" title="100px" alt="서비스 YAML 확인"></img> <br>
+   <img src="new_images/135_vm_svc2.png" title="100px" alt="서비스 YAML 확인"> <br>
 <br>
 
 7. YAML을 다음 정의로 바꿉니다.
@@ -260,32 +260,32 @@ MTV(Migration Toolkit for Virtualization)는 VMware Virtual Disk Development Kit
          port: 80
          targetPort: 80
    ```
-   <img src="new_images/136_vm_svc3.png" title="100px" alt="변경된 서비스 YAML 확인"></img> <br>
+   <img src="new_images/136_vm_svc3.png" title="100px" alt="변경된 서비스 YAML 확인"> <br>
    * metadata.namespace의 값이 `vmexamples`인 것을 확인합니다.
 <br>
 
 8. **만들기**를 누르고 생성된 서비스를 확인합니다.
 
-   <img src="new_images/137_vm_svc4.png" title="100px" alt="생성된 서비스 확인"></img> <br>
+   <img src="new_images/137_vm_svc4.png" title="100px" alt="생성된 서비스 확인"> <br>
    
    **Pod 선택기**가 `env=webapp`인 것을 확인하고 이를 누릅니다.
-   <img src="new_images/138_vm_pod_selector.png" title="100px" alt="생성된 서비스 확인"></img> <br>
+   <img src="new_images/138_vm_pod_selector.png" title="100px" alt="생성된 서비스 확인"> <br>
    * 해당 서비스에 두 개의 winweb01/02 가상머신이 있는 것을 확인합니다.
 
    webweb01 관련 포드를 누릅니다.
-   <img src="new_images/139_vm_web01.png" title="100px" alt="생성된 서비스 확인"></img> <br>
+   <img src="new_images/139_vm_web01.png" title="100px" alt="생성된 서비스 확인"> <br>
    * **라벨**에 `env=winapp`가 있는 것을 확인합니다.
 <br>
 
 9. 이제 오픈시프트 클러스터 내에서 윈도우 IIS에 액세스할 수 있습니다. 다른 가상머신은 DNS 이름 `webapp.vmexamples`를 사용하여 여기에 액세스할 수 있습니다. 그러나 이러한 웹 서버는 외부에서 액세스 가능한 애플리케이션의 프런트 엔드이므로 **경로**를 사용하여 노출할 것입니다.
 
    왼쪽 탐색 메뉴에서 **네트워킹** → **경로**로 이동한 후 **경로 만들기**를 누릅니다.
-   <img src="new_images/140_vm_route.png" title="100px" alt="경로 만들기"></img> <br>
+   <img src="new_images/140_vm_route.png" title="100px" alt="경로 만들기"> <br>
 <br>
 
 10. 다음 정보를 입력하세요.
 
-    <img src="new_images/140_vm_route2.png" title="100px" alt="마이그레이션 된 가상머신 경로 생성"></img> 
+    <img src="new_images/140_vm_route2.png" title="100px" alt="마이그레이션 된 가상머신 경로 생성">
     * **이름**: `route-webapp`
     * **서비스**: `webapp`
     * **대상 포트**: `80 → 80 (TCP)`
@@ -299,10 +299,10 @@ MTV(Migration Toolkit for Virtualization)는 VMware Virtual Disk Development Kit
 
 11. 생성된 경로를 확인합니다.
 
-    <img src="new_images/141_vm_route3.png" title="100px" alt="생성된 가상머신의 경로 확인"></img> <br>
+    <img src="new_images/141_vm_route3.png" title="100px" alt="생성된 가상머신의 경로 확인"> <br>
 
     **위치** 필드에 표시된 주소로 이동합니다.
-    <img src="new_images/142_server_error.png" title="100px" alt="가상머신의 경로 URL 확인"></img> <br>
+    <img src="new_images/142_server_error.png" title="100px" alt="가상머신의 경로 URL 확인"> <br>
 <br>
 
 12. 페이지가 로드되면 오류가 표시됩니다. 이는 윈도우 웹 서버가 데이터베이스 가상머신에 연결하기 위해 내부 이름 `database`를 확인할 수 없기 때문입니다.
@@ -325,12 +325,12 @@ MTV(Migration Toolkit for Virtualization)는 VMware Virtual Disk Development Kit
           port: 3306
           targetPort: 3306    
     ```
-    <img src="new_images/143_database_svc.png" title="100px" alt="데이터베이스 용 서비스 생성"></img> <br>
+    <img src="new_images/143_database_svc.png" title="100px" alt="데이터베이스 용 서비스 생성"> <br>
     YAML을 변경 완료 후 **만들기**를 누릅니다.
     <br>
 
     생성된 서비스를 확인합니다.
-    <img src="new_images/144_database_svc2.png" title="100px" alt="생성된 데이터베이스 용 서비스 확인"></img> <br>
+    <img src="new_images/144_database_svc2.png" title="100px" alt="생성된 데이터베이스 용 서비스 확인"> <br>
 
 > [!NOTE]
 > 이 예에서 서비스는 단순히 가상머신 이름 selector를 사용하고 있습니다. 모든 가상머신에 자동으로 추가되는 기본 레이블입니다. selector와 일치하는 가상머신이 하나만 있기 때문에 서비스는 데이터베이스에 대한 부하를 분산하지 않고 대신 내부 DNS 이름을 통한 검색을 위해 서비스를 사용합니다.
@@ -338,10 +338,10 @@ MTV(Migration Toolkit for Virtualization)는 VMware Virtual Disk Development Kit
 
 13. webapp URL을 다시 로드하면 적절한 결과를 얻을 수 있습니다.
 
-    <img src="new_images/145_request.png" height="80%" width="80%" title="100px" alt="webapp의 URL을 리로드하여 결과 확인"></img> <br>
+    <img src="new_images/145_request.png" height="80%" width="80%" title="100px" alt="webapp의 URL을 리로드하여 결과 확인"> <br>
 
     다시 로드하면 `visitor number`가 늘어 납니다.
-    <img src="new_images/146_request2.png" height="80%" width="80%" title="100px" alt="webapp의 URL을 리로드하여 결과 확인"></img> <br>
+    <img src="new_images/146_request2.png" height="80%" width="80%" title="100px" alt="webapp의 URL을 리로드하여 결과 확인"> <br>
 
 > [!NOTE]
 > 웹 서비스가 실행되는 데 시간일 걸릴 수 있습니다. 시간이 지나면 정상적으로 표시가 됩니다.
