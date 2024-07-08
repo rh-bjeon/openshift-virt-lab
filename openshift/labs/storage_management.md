@@ -44,26 +44,26 @@
 
 1. **관리(Administration)** → **사용자 지정 리소스 정의(CustomResourceDefinitions)** 으로 이동합니다.
 
-   <img src="new_images/84_crd.png" height="30%" width="30%" title="100px" alt="스토리지 관리 왼쪽 메뉴"></img> <br> 
+   <img src="new_images/84_crd.png" height="30%" width="30%" title="100px" alt="스토리지 관리 왼쪽 메뉴"> <br> 
 <br>
 
 2. 위의 **Name**에 `datasource`를 검색합니다.
 
-   <img src="new_images/85_datasource.png" title="100px" alt="데이터소스 검색"></img> <br> 
+   <img src="new_images/85_datasource.png" title="100px" alt="데이터소스 검색"> <br> 
 <br>
 
 3. 인스턴스 탭을 선택하면 오픈시프트 가상화가 자동으로 생성한 데이터소스(부팅소스)를 나열합니다.
 
-   <img src="new_images/85_datasource_details.png" title="100px" alt="부팅소스 리스트"></img> <br>
+   <img src="new_images/85_datasource_details.png" title="100px" alt="부팅소스 리스트"> <br>
 
 4. 자세한 정보를 얻으려면 목록에서 하나(예: `fedora-XX`)를 선택하십시오. 해당 부팅소스에 대한 상세 정보를 확인 할 수 있습니다.
-   <img src="new_images/85_datasource_fedora_details.png" title="100px" alt="상세 정보 리스트"></img> <br>
+   <img src="new_images/85_datasource_fedora_details.png" title="100px" alt="상세 정보 리스트"> <br>
 
 5. 레드햇은 해당 부팅소스에 포함된 골든 이미지를 크론 잡 스케줄링을 통해 주기적으로 동기화 합니다. <br>
 
 **사용자 지정 리소스 정의(CustomResourceDefinitions)** 에서 **Name**에 **dataimport**를 검색합니다.
 
-   <img src="new_images/86_dataimportcron.png" title="100px" alt="datacronimport"></img> <br>
+   <img src="new_images/86_dataimportcron.png" title="100px" alt="datacronimport"> <br>
 
 6. 인스턴스 탭을 선택하면 오픈시프트 가상화가 주기적으로 갱신하는 골든 이미지 목록을 확일 할 수 있습니다.
 
@@ -71,30 +71,30 @@
 
 7. 자세한 정보를 얻으려면 목록에서 하나(예: `fedora-XX`)를 선택하십시오. 상세 정보를 통해 **골든 이미지의 Source** 정보와 **Cron Job** 주기를 확인 할 수 있습니다.
 
-<img src="new_images/86_dataimportcron_fedora_details.png" title="100px" alt="datacronimportcrons fedora 상세 정보"></img> <br>
+<img src="new_images/86_dataimportcron_fedora_details.png" title="100px" alt="datacronimportcrons fedora 상세 정보"> <br>
 
 8. 가상머신이 생성되면 부팅 소스 이미지가 복제되고 새 디스크가 생성됩니다. `vmexamples` 프로젝트로 전환하고 PVC(디스크) 목록을 검토합니다.
 
    이 프로젝트의 가상머신 용 각 디스크에 대한 PVC와 이 워크숍의 이전 섹션에서 생성된 Microsoft Windows Server 2019 디스크 이미지용 PVC가 표시됩니다. 원하는 경우 마이크로소프트 윈도우 ISO와 함께 이 PVC를 다른 가상 머신에서 재사용하여 운영 체제를 설치할 수 있습니다.
 
-   <img src="new_images/86_pvc_details.png" title="100px" alt="PVC를 사용하는 가상머신 리스트"></img> <br>
+   <img src="new_images/86_pvc_details.png" title="100px" alt="PVC를 사용하는 가상머신 리스트"> <br>
 <br>
 
 6. 정보를 얻으려면 `fedora02`를 선택하십시오.
 
-   <img src="new_images/87_fedora02_pvc_details.png" title="100px" alt="PVC 상세 정보"></img> <br>
+   <img src="new_images/87_fedora02_pvc_details.png" title="100px" alt="PVC 상세 정보"> <br>
 <br>
 
 7. *영구 볼륨 클레임(Persistent Volume Claim)* 은 볼륨을 프로비저닝하기 위해 특정 *스토리지 클래스(Storage class)* 또는 기본 스토리지 클래스를 신청합니다. 
 
    목록을 얻으려면 **스토리지** → **영구 볼륨**로 이동하십시오. **Claim** 기준으로 정렬합니다.
 
-   <img src="new_images/88_pv.png" title="100px" alt="PV 리스트"></img> <br>
+   <img src="new_images/88_pv.png" title="100px" alt="PV 리스트"> <br>
 <br>
 
 8. 이제 **Virtualization** → **Bootable volumes**으로 이동하여 사용 가능한 볼륨 목록을 얻습니다.
 
-   <img src="new_images/89_bootable_volumes.png" title="100px" alt="부팅 가능한 볼륨 리스트"></img> <br>
+   <img src="new_images/89_bootable_volumes.png" title="100px" alt="부팅 가능한 볼륨 리스트"> <br>
 <br>
 <br>
 
@@ -122,17 +122,17 @@
 
 1. **Virtualization** → **VirtualMachines**으로 다시 이동하여 `vmexamples` 프로젝트에서 가상머신 `fedora02`를 선택합니다.
 
-   <img src="new_images/90_fedora02_project_select.png" title="100px" alt="fedora02 가상머신 개요"></img> <br>
+   <img src="new_images/90_fedora02_project_select.png" title="100px" alt="fedora02 가상머신 개요"> <br>
 <br>
 
 2. **스냅샷(Snapshots)** 탭으로 이동하여 **Take snapshot**을 누릅니다.
 
-   <img src="new_images/92_fedora02_take_snapshot.png" title="100px" alt="가상머신의 스냅샷 탭"></img> <br>
+   <img src="new_images/92_fedora02_take_snapshot.png" title="100px" alt="가상머신의 스냅샷 탭"> <br>
 <br>
 
 3. 대화상자의 **Name**에는 `fedora02-snap`을 입력하고 **Save**를 누릅니다.
 
-   <img src="new_images/93_fedora02_snapshot.png" title="100px" alt="가상머신 스냅샷 대화창"></img> <br>
+   <img src="new_images/93_fedora02_snapshot.png" title="100px" alt="가상머신 스냅샷 대화창"> <br>
 
 > [!NOTE]
 > `cloudinitdisk`가 스냅샷에 포함되지 않는다는 경고가 표시됩니다. 이는 임시(ephemeral) 디스크이기 때문에 예상되는 현상이며 발생합니다.
@@ -140,12 +140,12 @@
 
 4. **Save**를 누르고 *스냅샷(Snapshot)* 이 생성되면 **Status** 가 `Succeeded`으로 표시될 때까지 기다립니다.
 
-   <img src="new_images/94_fedora02_snapshot_success.png" title="100px" alt="가상머신의 스냅샷 확인"></img> <br>
+   <img src="new_images/94_fedora02_snapshot_success.png" title="100px" alt="가상머신의 스냅샷 확인"> <br>
 <br>
 
 5. 세 개의 점을 누르고 가상머신이 실행 중이므로 **Restore** 옵션이 회색으로 표시되는지 확인합니다.
 
-   <img src="new_images/95_fedora02_snapshot_menu.png" title="100px" alt="가상머신 복구 옵션 확인"></img> <br>
+   <img src="new_images/95_fedora02_snapshot_menu.png" title="100px" alt="가상머신 복구 옵션 확인"> <br>
 <br>
 
 6. **Console** 탭으로 전환하여 실행 중인 가상머신을 수정합니다. 이 작은 수정으로 인해 가상머신이 중단되고 더 이상 부팅할 수 없습니다.
@@ -156,12 +156,12 @@
    ```
    
    수정하면 가상머신이 중단되고 더 이상 부팅할 수 없습니다.
-   <img src="new_images/96_fedora02_rm_command.png" title="100px" alt="가상머신 장애"></img> <br>
+   <img src="new_images/96_fedora02_rm_command.png" title="100px" alt="가상머신 장애"> <br>
 <br>
 
 7. *가상머신*을 부팅할 수 없습니다.
 
-   <img src="new_images/97_fedora02_booting_error.png" title="100px" alt="가상머신 장애 확인"></img> <br>
+   <img src="new_images/97_fedora02_booting_error.png" title="100px" alt="가상머신 장애 확인"> <br>
 
 > [!IMPORTANT]
 > 이전 단계에서는 운영체제가 게스트 내에서 종료되었습니다. 그러나 오픈시프트 가상화는 기본적으로 자동으로 다시 시작합니다. 이 동작은 전체적으로 또는 가상머신 별로 변경할 수 있습니다.
@@ -169,35 +169,35 @@
 
 8. **Actions** 드롭다운 메뉴의 **Stop**을 누르고 *가상머신*을 중지합니다. 가상머신이 중지될 때까지 기다립니다.
 
-   <img src="new_images/98_fedora02_vm_stop.png" title="100px" alt="가상머신 정지"></img> <br>
+   <img src="new_images/98_fedora02_vm_stop.png" title="100px" alt="가상머신 정지"> <br>
 
    **Overview** 탭에서 가상머신지 중지된 것을 확인합니다.
-   <img src="new_images/99_fedora02_vm_stop_confirm.png" title="100px" alt="가상머신 정지 확인"></img> <br>
+   <img src="new_images/99_fedora02_vm_stop_confirm.png" title="100px" alt="가상머신 정지 확인"> <br>
 <br>
 
 9. **Snapshots** 탭으로 다시 이동하여 이전에 생성된 스냅샷에서 **Restore**을 누릅니다.
 
-   <img src="new_images/100_fedora02_vm_snapshot_restore.png" title="100px" alt="가상머신 복구"></img> <br>
+   <img src="new_images/100_fedora02_vm_snapshot_restore.png" title="100px" alt="가상머신 복구"> <br>
 <br>
 
 10. 표시된 대화 상자에서 **Restore** 을 누릅니다.
 
-    <img src="new_images/101_fedora02_vm_snapshot_restore_02.png" title="100px" alt="가상머신 복구 대화창"></img> <br>
+    <img src="new_images/101_fedora02_vm_snapshot_restore_02.png" title="100px" alt="가상머신 복구 대화창"> <br>
 <br>
 
 11. 가상머신이 복원될 때까지 기다린 후 복원된 것을 확인합니다.
 
-    <img src="new_images/102_fedora02_snapshot_restore_status.png" title="100px" alt="복구된 가상머신"></img> <br>
+    <img src="new_images/102_fedora02_snapshot_restore_status.png" title="100px" alt="복구된 가상머신"> <br>
 <br>
 
 12. Actions 메뉴에서 **Start**를 누르고 가상머신이 시작되기를 기다립니다.
 
-    <img src="lab-images/storage_mgmt--3.2.12_start_vm.png" title="100px" alt="복구된 가상머신 시작"></img> <br>
+    <img src="lab-images/storage_mgmt--3.2.12_start_vm.png" title="100px" alt="복구된 가상머신 시작"> <br>
 <br>
 
 13. Console 탭으로 이동하여 가상머신이 다시 올바르게 부팅되는지 확인합니다.
     
-    <img src="new_images/103_fedora02_vm_restart_confirm.png" title="100px" alt="실행 중인 가상머신 확인"></img> <br>
+    <img src="new_images/103_fedora02_vm_restart_confirm.png" title="100px" alt="실행 중인 가상머신 확인"> <br>
 <br>
 <br>
 
@@ -208,7 +208,7 @@
 
 1. **Actions** 메뉴에서 **Clone**을 누르면 대화 상자가 열립니다.
 
-   <img src="new_images/104_fedora02_vm_clone.png" title="100px" alt="가상머신 복제 메뉴"></img> <br>
+   <img src="new_images/104_fedora02_vm_clone.png" title="100px" alt="가상머신 복제 메뉴"> <br>
 
 > [!NOTE]
 > 가상머신의 전원이 켜져 있으면 복제를 수행하기 위해 가상머신이 중지됩니다. 가상머신의 스냅샷이 있는 경우 가상머신 전원을 끄지 않고도 스냅샷에서 복제본을 생성할 수도 있습니다.
@@ -216,12 +216,12 @@
 
 2. 가상머신 복제 대화 상자를 확인하고 **Clone**을 누릅니다.
 
-   <img src="new_images/105_fedora02_vm_clone_name_change.png" title="100px" alt="가상머신 복제 메뉴"></img> <br>
+   <img src="new_images/105_fedora02_vm_clone_name_change.png" title="100px" alt="가상머신 복제 메뉴"> <br>
 <br>
 
 3. 새 가상머신이 생성되고 디스크가 복제되며 자동으로 포털이 새 가상머신으로 리디렉션됩니다.
 
-   <img src="new_images/106_fedora02_clone_complete.png" title="100px" alt="복제된 가상머신"></img> <br>
+   <img src="new_images/106_fedora02_clone_complete.png" title="100px" alt="복제된 가상머신"> <br>
 
 > [!IMPORTANT]
 > 복제된 가상머신은 원본 가상머신과 동일한 ID를 갖게 되므로 가상머신과 상호 작용하는 애플리케이션 및 다른 클라이언트와 충돌이 발생할 수 있습니다. 외부 네트워크에 연결되어 있거나 동일한 프로젝트에 있는 가상머신을 복제할 때는 주의하세요.
