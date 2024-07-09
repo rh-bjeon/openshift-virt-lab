@@ -103,7 +103,7 @@ VM이 현재 **Pod** 네트워킹에 연결된 단일 인터페이스를 기본�
 
 4. **Actions** 메뉴의 *Restart*를 클릭하여 가상머신을 다시 시작합니다. 
 
-   <img src="new_images/79_vm_restart.png" title="100px" alt="가상머신 재시작"></img> <br>
+   <img src="new_images/79_vm_restart.png" title="100px" alt="가상머신 재시작"> <br>
 <br>
 
 
