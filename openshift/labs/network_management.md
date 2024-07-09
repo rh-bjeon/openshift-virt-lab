@@ -176,6 +176,35 @@ VM이 현재 **Pod** 네트워킹에 연결된 단일 인터페이스를 기본�
       
       실행 결과는 다음과 같습니다.
       <img src="new_images/181_ssh_connect.png" title="100px" alt="가상머신의 SSH 연결 확인"> <br>
+
+   4. ssh 접속 시 **Permission denied** 에러가 발생하는 경우에는 다음을 확인합니다.
+      <img src="new_images/183_ssh_permission_denied.png" title="100px" alt="가상머신의 SSH 연결 에러 발생"> <br>
+      
+      **/etc/ssh/sshd_config.d/50-cloud-init.conf** 파일의 설정을 확인합니다.
+      해당 설정이 override될 수 있으므로 확인합니다.
+      ```bash
+      cd /etc/ssh/sshd_config.d
+      ```
+      <img src="new_images/184_sshd_config_d.png" title="100px" alt="가상머신의 SSH 설정 확인"> <br>
+
+   5. **50-cloud-init.conf** 파일을 열어서 **PasswordAuthentication** 값을 **yes**로 변경합니다.
+      ```bash
+      PasswordAuthentication yes
+      ```
+      <img src="new_images/185_sshd_config_update.png" title="100px" alt="가상머신의 SSH 설정 업데이트"> <br>
+      
+   7. 설정 반영을 위해 sshd를 재 시작 합니다.
+      ```bash
+      systemctl restart sshd
+      ```
+       <img src="new_images/186_sshd_restart.png" title="100px" alt="가상머신의 SSH 재 시작"> <br>
+       
+   8. 외부 IP로 ssh 접근 확인합니다. IP는 자신의 환경에 맞는 IP로 대체하여 실행합니다.
+      ```bash
+      ssh fedora@192.168.3.152
+      ```
+
+      <img src="187_ssh_connect_susscess.png" title="100px" alt="가상머신의 SSH 접속 확인"> <br>
       
 > [!NOTE]
 > 노드에 할당된 IP를 가지고 기존 IP를 교체합니다.
