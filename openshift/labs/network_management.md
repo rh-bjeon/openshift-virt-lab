@@ -144,7 +144,12 @@ VM이 현재 **Pod** 네트워킹에 연결된 단일 인터페이스를 기본�
    <img src="new_images/179_sshd_config_update.png" title="100px" alt="가상머신 sshd 옵션 추가"> <br>
 <br>
 
-9. 설정을 저장하고, 반영을 위해 sshd 서비스를 재 시작합니다.
+   설정 파일에 **PermitLogin yes**를 추가합니다.
+   ```bash
+   PermitRootLogin yes
+   ```
+
+8. 설정을 저장하고, 반영을 위해 sshd 서비스를 재 시작합니다.
    ```bash
    systemctl restart sshd
    ```
@@ -152,7 +157,7 @@ VM이 현재 **Pod** 네트워킹에 연결된 단일 인터페이스를 기본�
 <br>
 
 
-10. 배스천 호스트를 사용하여 가상머신의 외부 연결을 확인합니다. 이 워크숍 시작 시 공유된 실습 환경 자료에 제공된 대로 SSH를 통해 호스트에 연결합니다. <br>
+9. 배스천 호스트를 사용하여 가상머신의 외부 연결을 확인합니다. 이 워크숍 시작 시 공유된 실습 환경 자료에 제공된 대로 SSH를 통해 호스트에 연결합니다. <br>
    사전에 Hypervisor 서버에 cockpit을 설치해 두었으므로 웹 콘솔을 이용하여 이를 이용하여 베스천 호스트에 연결할 수 있습니다.
    
    1. 웹 브라우저에서 제공 받은 `hypervisor.khsqt.dynamic.redhatworkshops.io` 주소를 이용하여 `https://hypervisor.khsqt.dynamic.redhatworkshops.io:9090`으로 접속합니다. <br>
