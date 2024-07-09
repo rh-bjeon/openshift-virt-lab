@@ -204,7 +204,7 @@ VM이 현재 **Pod** 네트워킹에 연결된 단일 인터페이스를 기본�
       ssh fedora@192.168.3.152
       ```
 
-      <img src="187_ssh_connect_susscess.png" title="100px" alt="가상머신의 SSH 접속 확인"> <br>
+      <img src="new_images/187_ssh_connect_susscess.png" title="100px" alt="가상머신의 SSH 접속 확인"> <br>
       
 > [!NOTE]
 > 노드에 할당된 IP를 가지고 기존 IP를 교체합니다.
