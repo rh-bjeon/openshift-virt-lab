@@ -136,7 +136,10 @@ VM이 현재 **Pod** 네트워킹에 연결된 단일 인터페이스를 기본�
    <img src="new_images/178_sshd_config.png" title="100px" alt="가상머신 sshd 설정 파일"> <br>
 <br>
 
-   설정 파일에 **PasswordAuthentication yes** 을 추가합니다.
+   설정 파일에 **PasswordAuthentication yes** 을 추가하거나 주석을 해제합니다.
+   ```bash
+    PasswordAuthentication yes
+   ```
 
    <img src="new_images/179_sshd_config_update.png" title="100px" alt="가상머신 sshd 옵션 추가"> <br>
 <br>
