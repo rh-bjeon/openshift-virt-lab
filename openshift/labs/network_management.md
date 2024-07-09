@@ -148,7 +148,7 @@ VM이 현재 **Pod** 네트워킹에 연결된 단일 인터페이스를 기본�
    ```bash
    systemctl restart sshd
    ```
-   <img src="new_images/180_sshd_service_restart.png" title="100px" alt="가상머신 sshd 재 시작"></img> <br>
+   <img src="new_images/180_sshd_service_restart.png" title="100px" alt="가상머신 sshd 재 시작"> <br>
 <br>
 
 9. 배스천 호스트를 사용하여 가상머신의 외부 연결을 확인합니다. 이 워크숍 시작 시 공유된 실습 환경 자료에 제공된 대로 SSH를 통해 호스트에 연결합니다. <br>
