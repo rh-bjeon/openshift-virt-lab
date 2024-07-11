@@ -125,12 +125,12 @@
 
 2. **Operators** → **설치된 Operator**로 돌아가서 **OADP Operator**를 선택합니다.
 
-   <img src="new_images/173_fedora02_restore.png" title="100px" alt="OADP 오퍼레이터 선택"> <br> 
+   <img src="new_images/173_return_oadp.png" title="100px" alt="OADP 오퍼레이터 선택"> <br> 
 <br>
 
 3. **Restore** 탭으로 전환하고 **Restore 만들기**를 누릅니다.
 
-   <img src="new_images/173_return_oadp.png" title="100px" alt="복구 탭 상태"> <br> 
+   <img src="new_images/174_odap_restore.png" title="100px" alt="복구 탭 상태"> <br> 
 <br>
 
 4. YAML 보기로 전환하고 콘텐츠를 다음 항목으로 바꿉니다.
@@ -153,22 +153,22 @@
      restorePVs: true
    ```
 
-   <img src="new_images/174_odap_restore.png" title="100px" alt="복구 YAML 변경"> <br>
+   <img src="new_images/174_odap_restore_yaml_update.png" title="100px" alt="복구 YAML 변경"> <br>
    변경된 YAML을 확인하고 **만들기**를 누릅니다. 
-<br>
 
-5. `상태` 열을 통해 진행을 확인합니다.
+5. `상태` 열을 통해 진행을 확인합니다. <br>
 
    `Phase: InProgress`는 현재 진행 중인 것을 나타냅니다.
-   <img src="new_images/174_odap_restore_yaml_update.png" title="100px" alt="복구 진행 중"> <br> 
+   <img src="new_images/175_oadp_restore_status_2.png" title="100px" alt="복구 진행 중"> <br>
+<br>
    
    `Phase: Completed`으로 바뀔 때까지 기다립니다.
-   <img src="new_images/175_oadp_restore_status_2.png" title="100px" alt="복구 완료 확인"> <br> 
+   <img src="new_images/176_oadp_restore_complete.png" title="100px" alt="복구 완료 확인"> <br> 
 <br>
 
-6. **Virtualization** → **Virtual Machines**으로 다시 이동하여 `fedora02`가 복원되었는지 확인합니다.
+7. **Virtualization** → **Virtual Machines**으로 다시 이동하여 `fedora02`가 복원되었는지 확인합니다.
 
-   <img src="new_images/176_oadp_restore_complete.png" title="100px" alt="복구된 가상머신 확인"> <br> 
+   <img src="new_images/173_fedora02_restore.png" title="100px" alt="복구된 가상머신 확인"> <br> 
 <br>
 <br>
 
