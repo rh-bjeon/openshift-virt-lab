@@ -152,10 +152,11 @@
      - restores.velero.io
      restorePVs: true
    ```
-
+   <br>
+   변경된 YAML을 확인하고 **만들기**를 누릅니다.<br>
    <img src="new_images/174_odap_restore_yaml_update.png" title="100px" alt="복구 YAML 변경"> <br>
-   변경된 YAML을 확인하고 **만들기**를 누릅니다. 
-
+   <br>
+   
 5. `상태` 열을 통해 진행을 확인합니다. <br>
 
    `Phase: InProgress`는 현재 진행 중인 것을 나타냅니다.
