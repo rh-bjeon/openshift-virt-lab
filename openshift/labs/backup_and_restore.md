@@ -101,21 +101,19 @@
      ttl: 720h0m0s
    ```
 
-   이 YAML의 콘텐츠는 `vmexamples` 네임스페이스에 `app: fedora02` 레이블이 있는 모든 객체가 `DataProtectionApplication` 구성에 지정된 위치에 백업된다는 것을 나타냅니다.
+   이 YAML의 콘텐츠는 `vmexamples` 네임스페이스에 `app: fedora02` 레이블이 있는 모든 객체가 `DataProtectionApplication` 구성에 지정된 위치에 백업된다는 것을 나타냅니다. <br>
+   **만들기**를 누릅니다.
 
    <img src="new_images/170_oadp_yaml_update.png" title="100px" alt="백업 만들기 yaml"> <br> 
 
-   **만들기**를 누릅니다.
+5. `상태` 열을 통해 진행 사항을 확인합니다.
+
+   `Phase: InProgress`로 백업 진행 중입니다. <br>
+   <img src="new_images/171_oadp_backup_status.png" title="100px" alt="백업 진행"> <br>
 <br>
 
-4. `상태` 열을 통해 진행 사항을 확인합니다.
-
-   `Phase: InProgress`로 백업 진행 중입니다.
-   <img src="new_images/171_oadp_backup_status.png" title="100px" alt="백업 진행"> <br> 
-
-   `Phase: Completed`으로 바뀔 때까지 기다립니다. 이는 가상머신이 성공적으로 백업되었음을 나타냅니다.
-   <img src="new_images/172_fedora02_vm_delete.png" title="100px" alt="백업 탭 상태 확인"> <br> 
-<br>
+    `Phase: Completed`으로 바뀔 때까지 기다립니다. 이는 가상머신이 성공적으로 백업되었음을 나타냅니다. <br>
+   <img src="new_images/172_oadp_backup_complete.png" title="100px" alt="백업 탭 상태 확인"> <br>
 <br>
 
 ## 4. 백업으로 복구
