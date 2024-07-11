@@ -15,4 +15,4 @@
 <br>
 
 ------
-[차례](../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 백업 및 복구 <<](./backup_and_restore.md)
+[차례](../../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 백업 및 복구 <<](./backup_and_restore.md)
