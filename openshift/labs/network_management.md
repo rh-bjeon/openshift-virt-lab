@@ -35,7 +35,7 @@
 가상머신에서 리눅스 브리지를 사용하려면 **Network Attachment Definition**를 생성해야 합니다. 이는 오픈시프트에 네트워크에 대해 알려주고 가상머신이 네트워크에 연결할 수 있도록 허용합니다. Network Attachment Definition은 `default` 프로젝트에서 생성되지 않는 한 생성된 프로젝트/네임스페이스에만 적용됩니다. 이를 통해 관리자는 자신의 가상머신들을 관리할 수 있는 액세스 권한이 있는 사용자가 사용할 수 있는 네트워크와 사용할 수 없는 네트워크를 제어할 수 있습니다. Network Attachment Definition이 생성되면 가상머신에서 네트워크 어댑터를 구성할 때 사용할 수 있습니다.
 
 > [!NOTE]
-> 시간적 제약으로 인해 이 실습에서는 호스트 네트워크가 이미 구성되어 있습니다. 구성을 보고 관리하는 방법과 함께 호스트 네트워킹에 대해 자세히 알아보려면 [여기](https://docs.openshift.com/container-platform/4.13/networking/k8s_nmstate/k8s-nmstate-observing-node-network-state.html)에 있는 NMState 설명서를 사용하세요.
+> 시간적 제약으로 인해 이 실습에서는 호스트 네트워크가 이미 구성되어 있습니다. 구성을 보고 관리하는 방법과 함께 호스트 네트워킹에 대해 자세히 알아보려면 [여기](https://docs.openshift.com/container-platform/4.15/networking/k8s_nmstate/k8s-nmstate-about-the-k8s-nmstate-operator.html)에 있는 NMState 설명서를 사용하세요.
 
 <br>
 
