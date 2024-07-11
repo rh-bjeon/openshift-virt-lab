@@ -120,7 +120,7 @@
 
 1. **Virtualization** → **VirtualMachines**로 이동하여 `fedora02` 가상머신을 삭제합니다.
 
-   <img src="new_images/172_oadp_backup_complete.png" title="100px" alt="fedora02 가상머신 삭제"> <br>
+   <img src="new_images/172_fedora02_vm_delete.png" title="100px" alt="fedora02 가상머신 삭제"> <br>
 <br>
 
 2. **Operators** → **설치된 Operator**로 돌아가서 **OADP Operator**를 선택합니다.
