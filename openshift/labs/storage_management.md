@@ -20,7 +20,7 @@
 
 특히 오픈시프트 가상화와 관련된 스토리지 프로토콜(예: NFS, iSCSI, FC 등)에는 제한이 없습니다. 유일한 요구 사항은 실시간 마이그레이션에 RWX 액세스 모드를 사용할 수 있어야 한다는 것입니다. 그렇지 않은 경우에는 가상머신 및 애플리케이션의 요구 사항을 가장 잘 충족하는 스토리지가 항상 올바른 선택입니다.
 
-<img src="lab-images/storage_mgmt--1.0_disk_concepts.png" title="100px" alt="스토리지 관리 디스크 개념"></img> <br> 
+<img src="lab-images/storage_mgmt--1.0_disk_concepts.png" title="100px" alt="스토리지 관리 디스크 개념"> <br> 
 <br>
 <br>
 
@@ -67,7 +67,7 @@
 
 6. 인스턴스 탭을 선택하면 오픈시프트 가상화가 주기적으로 갱신하는 골든 이미지 목록을 확일 할 수 있습니다.
 
-<img src="new_images/86_dataimportcron_fedora.png" title="100px" alt="datacronimportcrons"></img> <br>
+<img src="new_images/86_dataimportcron_fedora.png" title="100px" alt="datacronimportcrons"> <br>
 
 7. 자세한 정보를 얻으려면 목록에서 하나(예: `fedora-XX`)를 선택하십시오. 상세 정보를 통해 **골든 이미지의 Source** 정보와 **Cron Job** 주기를 확인 할 수 있습니다.
 
