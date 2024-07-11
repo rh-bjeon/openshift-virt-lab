@@ -354,7 +354,7 @@ Migration Toolkit for Virtualization 외에도 세 가지 다른 마이그레이
 
 * [Migration Toolkit for Runtimes](https://developers.redhat.com/products/mtr/overview) - 자바 애플리케이션 현대화 및 마이그레이션을 지원하고 가속화합니다.
 * [Migration Toolkit for Applications](https://access.redhat.com/documentation/en-us/migration_toolkit_for_applications/) - 컨테이너 및 쿠버네티스에 대한 대규모 애플리케이션 현대화 노력을 가속화합니다.
-* [Migration Toolkit for Containers](https://docs.openshift.com/container-platform/4.12/migration_toolkit_for_containers/about-mtc.html) - 오픈시프트 클러스터 간에 상태 저장 애플리케이션 워크로드를 마이그레이션합니다.
+* [Migration Toolkit for Containers](https://docs.openshift.com/container-platform/4.15/migration_toolkit_for_containers/about-mtc.html) - 오픈시프트 클러스터 간에 상태 저장 애플리케이션 워크로드를 마이그레이션합니다.
 
 이에 대한 자세한 내용은 레드햇 고객 담당 팀에 문의하세요.
 
