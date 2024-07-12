@@ -149,4 +149,4 @@ BMC(Baseboard Management Console)를 사용하면 레드햇 오픈시프트 콘�
 <br>
 
 ------
-[차례](../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 오픈시프트 가상화 소개 <<](./openshift_virt_overview.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 오픈시프트 가상화 기본 >>](./openshift_virt_basic.md)
+[차례](../../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 오픈시프트 가상화 소개 <<](./openshift_virt_overview.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 오픈시프트 가상화 기본 >>](./openshift_virt_basic.md)
