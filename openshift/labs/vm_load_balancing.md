@@ -213,4 +213,4 @@ MetalLB는 NMstate 또는 멀터스를 사용하여 물리적 네트워크를 �
 <br>
 
 ------
-[차례](../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 가상머신 마이그레이션 <<](./vm_migration.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 백업 및 복구 >>](./backup_and_restore.md)
+[차례](../../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 가상머신 마이그레이션 <<](./vm_migration.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 백업 및 복구 >>](./backup_and_restore.md)
