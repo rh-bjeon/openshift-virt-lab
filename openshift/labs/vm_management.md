@@ -108,4 +108,4 @@
 <br>
 
 ------
-[차례](../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 오픈시프트 가상화 커스터마이징 <<](./openshift_virt_customization.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 네트워크 관리 >>](./network_management.md)
+[차례](../../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 오픈시프트 가상화 커스터마이징 <<](./openshift_virt_customization.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 네트워크 관리 >>](./network_management.md)
