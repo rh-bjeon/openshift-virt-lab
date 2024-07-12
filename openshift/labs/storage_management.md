@@ -262,4 +262,4 @@
 <br>
 
 ------
-[차례](../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 네트워크 관리 <<](./network_management.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 가상머신 마이그레이션 >>](./vm_migration.md)
+[차례](../../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 네트워크 관리 <<](./network_management.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 가상머신 마이그레이션 >>](./vm_migration.md)
