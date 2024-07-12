@@ -175,4 +175,4 @@
 <br>
 
 ------
-[차례](../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 오픈시프트 가상화 기본 <<](./openshift_virt_basic.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 가상머신 관리 >>](./vm_management.md)
+[차례](../../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 오픈시프트 가상화 기본 <<](./openshift_virt_basic.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 가상머신 관리 >>](./vm_management.md)
