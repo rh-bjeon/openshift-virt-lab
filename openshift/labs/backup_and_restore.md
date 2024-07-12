@@ -182,4 +182,4 @@
 <br>
 
 ------
-[차례](../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 가상머신 로드밸런싱 <<](./vm_load_balancing.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 오픈시프트 가상화 마무리 >>](./close.md)
+[차례](../../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 가상머신 로드밸런싱 <<](./vm_load_balancing.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 오픈시프트 가상화 마무리 >>](./close.md)
