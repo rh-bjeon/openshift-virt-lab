@@ -363,4 +363,4 @@ Migration Toolkit for Virtualization 외에도 세 가지 다른 마이그레이
 <br>
 
 ------
-[차례](../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 스토리지 관리 <<](./storage_management.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 가상머신 로드밸런싱 >>](./vm_load_balancing.md)
+[차례](../../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [<< 스토리지 관리 <<](./storage_management.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 가상머신 로드밸런싱 >>](./vm_load_balancing.md)
