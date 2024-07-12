@@ -41,4 +41,4 @@
 <br>
 
 ------
-[차례](../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 랩 환경 >>](./lab_review.md)
+[차례](../../README.md) &nbsp;&nbsp;&nbsp;&nbsp; [>> 랩 환경 >>](./lab_review.md)
