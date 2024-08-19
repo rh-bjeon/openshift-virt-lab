@@ -1,6 +1,6 @@
 # 오픈시프트 가상화 로드쇼
 <br>
-<img align="left" src="./common-images/이승일--II_컴퓨터.png" width="300px" height="300px" title="100px" alt="안녕">
+<img align="left" src="./common-images/Logo-Red_Hat-Hat_icon-Standard-RGB.png" width="300px" height="300px" title="100px" alt="안녕">
 0. [오픈시프트 가상화 소개](./openshift/labs/openshift_virt_overview.md)
 1. [랩 환경](./openshift/labs/lab_review.md)
 2. [오픈시프트 가상화 기본](./openshift/labs/openshift_virt_basic.md)
