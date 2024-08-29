@@ -256,14 +256,14 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 5. **Storage** 섹션에서 다음을 지정합니다.
    1. `Boot from CD` 체크박스를 활성화
    2. **CD Source**를 URL로 선택
-   3. **Image URL**에 *http://192.168.123.100:81/Windows2019.iso* 를 입력
+   3. **Image URL**에 *https://catalog-item-assets.s3.us-east-2.amazonaws.com/qcow_images/Windows2019.iso* 를 입력
    4. **Disk size**를 **5GiB**로 설정하여 CD 크기를 줄임
 
 6. **Disk source**를 그대로 두고 하단의 **Disk size**의 값도 기본값인 **60GiB**로 유지합니다.
 
 7. `Mount Windows drivers disk`가 활성화되어 있는지 확인합니다. 이는 VirtIO용 드라이버를 제공하는 윈도우 시스템을 설치하는 데 필요합니다.
 
-   <img src="new_images/31_vm_configurating.png" title="100px" alt="윈도우 2019 템플릿 패러미터"> <br>
+   <img src="new_images/31_vm_configurating-new.png" title="100px" alt="윈도우 2019 템플릿 패러미터"> <br>
 <br>
 
 
@@ -282,7 +282,7 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 
 10. **Use this disk as a boot source**의 체크박스를 선택하고 **Save**를 누릅니다.
 
-    <img src="new_images/31_boot_disk_order_change.png" title="100px" alt="윈도우 2019 템플릿 패러미터 채우기"> <br>
+    <img src="new_images/31_boot_disk_order_change-new.png" title="100px" alt="윈도우 2019 템플릿 패러미터 채우기"> <br>
 <br>
 
 11. **Scripts** 탭으로 전환하고 `Sysprep` 섹션에서 **Edit**를 누릅니다.
