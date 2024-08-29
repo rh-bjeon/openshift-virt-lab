@@ -64,7 +64,7 @@
 
 6. Customize VirtualMachine을 선택합니다.
 
-   <img src="new_images/50_change_resource.png" title="100px" alt="가상머신 사용자 정의 개요 확인"> <br>
+   <img src="new_images/50_change_resource-new.png" title="100px" alt="가상머신 사용자 정의 개요 확인"> <br>
 <br>
 
 
