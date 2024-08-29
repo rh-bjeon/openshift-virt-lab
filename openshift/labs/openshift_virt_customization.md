@@ -51,7 +51,7 @@
 
    이 템플릿에는 이미 사용 가능한 디스크가 있지만 외부 웹 서버에서 다른 디스크를 가져오고 싶습니다. 이는 디스크 라이브러리에서 가상머신을 배포하기 위한 한 가지 옵션이지만 스토리지 공급자에 의존하여 디스크용 PVC 클론을 오프로드하는 것보다 느릴 수 있습니다. 여기에 사용된 QCOW2 디스크 이미지를 PVC로 가져와 가상머신 클론용 소스 디스크로 사용할 수도 있습니다. 이를 수행하는 방법에 대한 자세한 내용은 [설명서](https://docs.openshift.com/container-platform/4.13/virt/virtual_machines/importing_vms/virt-importing-virtual-machine-images-datavolumes.html)를 참조하십시오.
 
-   <img src="new_images/46_fedora_customize-new.png" title="100px" alt="템플렛에서 가상머신 사용자 정의 클릭"> <br>
+   <img src="new_images/46_fedora_customize-new2.png" title="100px" alt="템플렛에서 가상머신 사용자 정의 클릭"> <br>
 <br>
    
    1. 이름을 `fedora02`로 지정
@@ -64,7 +64,7 @@
    
 8. 가상 머신의 리소스 할당을 조정하기 위해 **CPU | Memory** 링크를 클릭하고, CPU 수를 2로, 메모리를 4GiB로 변경합니다.
 
-   <img src="new_images/50_change_resource.png" title="100px" alt="가상머신 사용자 정의 개요 확인"> <br>
+   <img src="new_images/50_change_resource-new2.png" title="100px" alt="가상머신 사용자 정의 개요 확인"> <br>
 <br>
 
 9. **Scheduling** 탭으로 이동하여 수정하지 않고 사용 가능한 옵션을 검토합니다.
