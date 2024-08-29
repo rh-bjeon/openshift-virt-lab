@@ -111,7 +111,7 @@
     <img src="new_images/56_fedora_disk_edit.png" title="100px" alt="가상머신 사용자 정의 스토리지 설정"> <br>
     
     **Edit disk** 대화창에 다음 값을 입력합니다.
-    <img src="new_images/57_confirm.png" title="100px" alt="가상머신 사용자 정의 스토리지 설정"> <br>
+    <img src="new_images/57_confirm-new.png" title="100px" alt="가상머신 사용자 정의 스토리지 설정"> <br>
 
     * **PertantVolumeClaim size**는 가상머신에 연결된 디스크의 크기입니다. 디스크 소스가 다른 PVC인 경우 소스보다 작을 수 없습니다. 그렇지 않으면 가져오는 QCOW2 또는 ISO를 저장할 수 있을 만큼 충분히 큰지 확인해야 합니다.
     * 디스크 **Type**은 예를 들어 CD-ROM 장치로 변경될 수 있습니다.
