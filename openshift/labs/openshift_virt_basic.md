@@ -277,7 +277,7 @@ Overview 대시보드는 오픈시프트 가상화 및 가상머신의 상태에
 <br>
 
 9.1 만약, **Disk** 메뉴에서 installation-cdrom이 boot의 첫 번째 순서가 아닌 경우에는 오른쪽 끝을 선택하여 Book Disk 순서를 아래 그림과 같이 변경합니다.
-    <img src="new_images/32_boot_disk_update.png" title="100px" alt="윈도우 2019 템플릿 패러미터 채우기"> <br>
+       <img src="new_images/32_boot_disk_update.png" title="100px" alt="윈도우 2019 템플릿 패러미터 채우기"> <br>
 <br>
 
 10. **Use this disk as a boot source**의 체크박스를 선택하고 **Save**를 누릅니다.
