@@ -1,8 +1,7 @@
 # 오픈시프트 가상화 로드쇼
 
 <br>
-
-<img align="left" src="../common-images/Logo-Red_Hat-Hat_icon-Standard-RGB.png" width="300px" height="300px" title="100px" alt="안녕"></img><br>
+<img src="../common-images/Logo-Red_Hat-Hat_icon-Standard-RGB.png" alt="안녕" align="middle"> <br>
 
 0. [오픈시프트 가상화 소개](labs/openshift_virt_overview.md)
 1. [랩 환경](labs/lab_review.md)
