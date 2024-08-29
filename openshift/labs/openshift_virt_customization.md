@@ -57,22 +57,18 @@
    1. 이름을 `fedora02`로 지정
 
    2. **Storage** 섹션에서 다음을 수행
-      * **Disk Source**: URL (PVC를 생성하는)
-      * **URL**: http://192.168.123.100:81/Fedora35.qcow2
+      * **Disk Source**: Template default
       * **Disk size**: 30GiB
+   3. 가상 머신의 리소스 할당을 조정하기 위해 **CPU | Memory** 링크를 클릭하고, CPU 수를 2로, 메모리를 4GiB로 변경합니다.
+      * **CPU|Memory** : 2 CPU | 4 GiB Memory
 
-6. 템플릿의 기본 구성으로 **Overview** 탭을 검토합니다.
+6. Customize VirtualMachine을 선택합니다.
 
    <img src="new_images/50_change_resource.png" title="100px" alt="가상머신 사용자 정의 개요 확인"> <br>
 <br>
 
-7. 가상 머신의 리소스 할당을 조정하기 위해 **CPU | Memory** 링크를 클릭하고, CPU 수를 2로, 메모리를 4GiB로 변경합니다.
 
-   <img src="new_images/51_change_resource2.png" title="100px" alt="가상머신 사용자 정의 CPU / Memory 설정"> <br>
-   변경 후 **Save**를 누릅니다.
-<br>
-
-8. **Scheduling** 탭으로 이동하여 수정하지 않고 사용 가능한 옵션을 검토합니다.
+7. **Scheduling** 탭으로 이동하여 수정하지 않고 사용 가능한 옵션을 검토합니다.
 
    <img src="new_images/52_scheduling.png" title="100px" alt="가상머신 사용자 정의 스케줄링 확인"> <br>
 
@@ -84,12 +80,12 @@
    * **Descheduler**는 가상머신과 이를 실행 중인 호스트를 주기적으로 평가하여 다른 호스트로 마이그레이션해야 하는지 결정하는 오픈시프트의 기능입니다. 이는 리소스 최적화 이유나 선호도 규칙 위반 때문일 수 있습니다.
 <br>
 
-11. **Network Interfaces** 탭으로 이동하여 기본적으로 가상머신이 `Pod networking`(오픈시프트 내부 네트워킹)에 연결되어 있는지 확인합니다.
+8. **Network Interfaces** 탭으로 이동하여 기본적으로 가상머신이 `Pod networking`(오픈시프트 내부 네트워킹)에 연결되어 있는지 확인합니다.
 
     <img src="new_images/53_networking_interfaces.png" title="100px" alt="가상머신 사용자 정의 네트워킹 인터페이스"> <br>
 <br>
 
-12. 세 개의 수직 점 아이콘을 클릭하여 `default`을 편집하고 기본 옵션을 검토합니다.
+9. 세 개의 수직 점 아이콘을 클릭하여 `default`을 편집하고 기본 옵션을 검토합니다.
 
     <img src="new_images/53_networking_interfaces_default.png" title="100px" alt="가상머신 사용자 정의 네트워킹 인터페이스 옵션 선택"> <br>
 
@@ -104,14 +100,14 @@
     현재 사용 가능한 다른 네트워크가 없으므로 `Cancel`를 눌러 대화 상자를 종료하세요.
 <br>
 
-13. **Disks** 탭으로 이동하여 가상머신에 할당된 장치를 확인합니다.
+10. **Disks** 탭으로 이동하여 가상머신에 할당된 장치를 확인합니다.
 
     <img src="new_images/55_fedora_disks.png" title="100px" alt="가상머신 사용자 정의 스토리지"> <br>
 
     가상머신을 만들기 전에 새 디스크를 추가하고 기본 디스크를 수정할 수 있습니다. 또한 *Storage class*와 부팅 *Source*(예: ISO에서 부팅)를 수정하고 *Interface*를 기본 `virtio`로 사용하는 대신 디스크 인터페이스를 정의할 수 있습니다.
 <br>
 
-14. 세 개의 수직 점 아이콘을 클릭하여 `루트디스크(rootdisk)`를 편집하고 기본 옵션을 검토합니다.
+11. 세 개의 수직 점 아이콘을 클릭하여 `루트디스크(rootdisk)`를 편집하고 기본 옵션을 검토합니다.
 
     <img src="new_images/56_fedora_disk_edit.png" title="100px" alt="가상머신 사용자 정의 스토리지 설정"> <br>
     
@@ -127,7 +123,7 @@
     확인 후 **Cancel**은 누릅니다.
 <br>
 
-15. **스크립트(Scripts)** 탭으로 이동합니다. 이 탭은 배포 시 cloud-init 또는 Sysprep과 같은 게스트 운영체제 사용자 지정을 적용하는 데 사용됩니다.
+12. **스크립트(Scripts)** 탭으로 이동합니다. 이 탭은 배포 시 cloud-init 또는 Sysprep과 같은 게스트 운영체제 사용자 지정을 적용하는 데 사용됩니다.
 
     <img src="new_images/58_fedora_scripts.png" title="100px" alt="가상머신 사용자 정의 스크립트"> <br>
 
@@ -136,7 +132,7 @@
     * **Sysprep**은 호스트 이름, 기본 `관리자(Administrator)` 암호 및 Active Directory 도메인 가입과 같은 구성 설정을 포함하여 새 운영체제 배포를 자동으로 구성하기 위한 마이크로소프트 윈도우 도구입니다.
 <br>
 
-16. Fedora 가상머신을 위해 **Cloud-init** 섹션에서 **Edit**을 누릅니다.
+13. Fedora 가상머신을 위해 **Cloud-init** 섹션에서 **Edit**을 누릅니다.
 
     <img src="new_images/58_fedora_scripts_2.png" title="100px" alt="가상머신 사용자 정의 스크립트 - cloud-init"> <br>
     
@@ -145,7 +141,7 @@
     여기서 해당 상자를 선택하여 네트워크 구성 정보를 지정할 수도 있습니다. 예를 들어 가상머신을 VLAN 네트워크에 직접 연결하고 고정 IP 주소를 구성하려는 경우에 유용합니다.
 <br>
 
-17. **Create VirtualMachine**을 눌러 생성 후 **Start this VirtualMachine after creation** 옵션이 선택되어 있는지 확인합니다.
+14. **Create VirtualMachine**을 눌러 생성 후 **Start this VirtualMachine after creation** 옵션이 선택되어 있는지 확인합니다.
 
     <img src="new_images/60_create_vm_new.png" title="100px" alt="가상머신 사용자 정의 생성 및 리뷰"> <br>
 
@@ -153,14 +149,14 @@
 > *Start this VirtualMachine after creation* 상자를 선택하는 것을 잊은 경우 가상머신이 생성되고 `Stopped` 상태라면 패널 오른쪽 상단에 있는 작업 드롭다운을 클릭하고 **Start** 을 선택합니다.
 <br>
 
-17. 가상머신이 실행되면 **Overview**를 확인합니다.
+15. 가상머신이 실행되면 **Overview**를 확인합니다.
 
     <img src="new_images/61_fedora02_overview.png" title="100px" alt="가상머신 fedora02 개요"> <br>
     * **Name**이 `fedora02`인 것을 확인
     * **CPU|Memory**가 `2CPU|4Gib Memory`인 것을 확인
 <br>
 
-18. **Console** 탭을 사용하여 자유롭게 연결하세요. 사용자는 `fedora`이고 비밀번호는 이전에 지정한 비밀번호입니다(예: `ocpVirtIsGre@t`).
+16. **Console** 탭을 사용하여 자유롭게 연결하세요. 사용자는 `fedora`이고 비밀번호는 이전에 지정한 비밀번호입니다(예: `ocpVirtIsGre@t`).
 
     <img src="new_images/62_fedora_console_login.png" title="100px" alt="가상머신 fedora02 콘솔"> <br>
 <br>
