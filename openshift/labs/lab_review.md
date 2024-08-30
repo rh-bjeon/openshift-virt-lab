@@ -24,12 +24,9 @@
 
 ### 1.1 지원되는 플랫폼
 
-* 현재 오픈시프트 가상화는, 온프레미스 또는 이와 유사한 위치에서, 자체 관리형 베어메탈 서버를 통해 완벽하게 지원됩니다. 오늘 실습 환경에서 사용하고 있는 장비는 Equinix에 배포된 오픈시프트 클러스터입니다.
-* Amazon Web Services(AWS) 베어메탈 인스턴스는 Technical Preview입니다. 자세한 내용은 [AWS 베어메탈 노드에 오픈시프트 가상화 배포](https://access.redhat.com/articles/6409731)를 참조하세요.
-* IBM 클라우드 베어메탈 서버는 Technocal Preview입니다. 자세한 내용은 [IBM 클라우드 베어메탈 노드에 오픈시프트 가상화 배포](https://access.redhat.com/articles/6738731)를 참조하세요.
-<br>
-> [!NOTE]
-> AWS 베어메탈 인스턴스 또는 IBM 클라우드 베어메탈 서버에 오픈시프트 가상화를 설치하는 것은 Technical Preview 기능입니다. Technical Preview 기능은 레드햇 프로덕션 서비스 수준 계약(SLA)에서 지원되지 않으며 기능적으로 완전하지 않을 수도 있습니다. 레드햇은 이를 프로덕션 환경에서 사용하는 것을 권장하지 않습니다. 이러한 기능은 향후 제품 기능에 대한 조기 액세스를 제공하므로 고객은 개발 프로세스 중에 기능을 테스트하고 피드백을 제공할 수 있습니다.
+* 현재 오픈시프트 가상화는 주로 베어메탈 물리서버, 일반적으로 온프레미스 또는 전용 호스팅에서 지원됩니다. 오늘 실습 환경에서 사용하고 있는 장비는 Equinix에 배포된 오픈시프트 클러스터입니다.
+* 다른 토폴로지(RHV 또는 vSphere와 같은 가상화된 인프라의 OpenShift)는 현재 지원되지 않지만 Managed OpenShift Cloud 서비스에 대한 지원을 추가하는 과정에 있습니다. AWS/ROSA에 대한 지원은 이미 발표되었습니다: https://www.redhat.com/en/blog/managing-virtual-machines-and-containers-as-code-with-openshift-virtualization-on-red-hat-openshift-service-on-aws)
+
 <br>
 
 ### 1.2 오픈시프트 가상화 요구 사항
@@ -41,7 +38,7 @@
   + Intel 64 또는 AMD64 CPU 확장 지원
   + Intel VT 또는 AMD-V 하드웨어 가상화 확장이 활성화됨
   + NX(실행 없음) 플래그가 활성화
-* 저장 요구사항
+* 스토리지 요구사항
   + 오픈시프트에서 지원됨
   + CSI 제공자를 적극 권장
   + 실시간 마이그레이션에는 ReadWriteMany(RWX) PVC가 필요
