@@ -24,9 +24,8 @@
 
 ### 1.1 지원되는 플랫폼
 
-* 현재 오픈시프트 가상화는 주로 베어메탈 물리서버, 일반적으로 온프레미스 또는 전용 호스팅에서 지원됩니다. 오늘 실습 환경에서 사용하고 있는 장비는 Equinix에 배포된 오픈시프트 클러스터입니다.
-* 다른 토폴로지(RHV 또는 vSphere와 같은 가상화된 인프라의 OpenShift)는 현재 지원되지 않지만 Managed OpenShift Cloud 서비스에 대한 지원을 추가하는 과정에 있습니다. AWS/ROSA에 대한 지원은 이미 발표되었습니다: https://www.redhat.com/en/blog/managing-virtual-machines-and-containers-as-code-with-openshift-virtualization-on-red-hat-openshift-service-on-aws)
-
+* 현재 오픈시프트 가상화는 주로 베어 메탈 물리서버, 일반적으로 온프레미스 또는 전용 호스팅에서 지원됩니다. 오늘 실습 환경에서 사용하고 있는 장비는 Equinix에 배포된 오픈시프트 클러스터입니다.
+* 온프레미스 베어메탈 서버, Amazon Web Services 베어 메탈 인스턴스, IBM Cloud® Bare Metal Servers를 지원하며 다른 클라우드 공급업체가 제공하는 베어 메탈 인스턴스나 서버는 지원되지 않습니다.
 <br>
 
 ### 1.2 오픈시프트 가상화 요구 사항
@@ -37,22 +36,23 @@
   + Red Hat Enterprise Linux(RHEL) 8 이상에서 지원됨
   + Intel 64 또는 AMD64 CPU 확장 지원
   + Intel VT 또는 AMD-V 하드웨어 가상화 확장이 활성화됨
-  + NX(실행 없음) 플래그가 활성화
+  + NX(no execute) 플래그가 활성화됨
 * 스토리지 요구사항
-  + 오픈시프트에서 지원됨
-  + CSI 제공자를 적극 권장
+  + 오픈시프트에서 지원되는 스토리지
+  + CSI 프로비저너를 통해 제공되는 PVC 사용 적극 권장
   + 실시간 마이그레이션에는 ReadWriteMany(RWX) PVC가 필요
-  + CSI 클론 또는 스냅샷을 통해 가속화된 볼륨 생성을 지원하는 CSI 프로비저너를 사용하면 템플릿에서 가상머신을 훨씬 빠르게 생성 가능
-  + CSI 프로비저너를 사용할 수 없는 경우 오픈시프트 가상화는 호스트 복사본을 사용하도록 대체
+  + CSI 클론 또는 스냅샷을 지원하는 CSI 프로비저너를 사용하면 가속화된 볼륨 생성을 통해 템플릿에서 가상머신을 훨씬 빠르게 생성 가능
+  + CSI 프로비저너를 사용할 수 없는 경우 오픈시프트 가상화는 hostpath를 사용하도록 대체함
+  + Block 볼륨 모드 권장 (Filesystem 볼륨 모드는 VM 디스크 스토리지에 필요하지 않은 더 많은 스토리지 계층을 사용)
 * 오픈시프트 클러스터 노드 요구 사항
-  + 작업자 노드에 설치된 RHCOS(Red Hat Enterprise Linux CoreOS)
+  + worker 노드에 설치된 RHCOS(Red Hat Enterprise Linux CoreOS)
   + 가상 머신 워크로드를 호스팅하기에 충분한 CPU, 메모리 및 네트워크 용량
 
-오픈시프트 가상화의 하드웨어에 대한 특정 요구 사항 및 지침에 대한 [문서](https://docs.openshift.com/container-platform/4.15/virt/install/preparing-cluster-for-virt.html)를 검토하세요.
+오픈시프트 가상화의 하드웨어에 대한 특정 요구 사항 및 지침에 대한 [문서](https://docs.openshift.com/container-platform/4.16/virt/install/preparing-cluster-for-virt.html)를 검토하세요.
 <br>
 
 > [!NOTE]
-> 클러스터가 서로 다른 CPU를 갖춘 워커 노드를 사용하는 경우 Intel과 AMD는 CPU마다 성능이 다르기 때문에 라이브 마이그레이션 실패가 발생할 수 있습니다.
+> 클러스터의 worker 노드가 서로 다른 CPU를 사용하는 경우, CPU마다 CPU feature가 다르기 때문에 라이브 마이그레이션에 실패할 수 있습니다.
 <br>
 <br>
 
@@ -67,7 +67,7 @@
 * 워커 노드 * 3*ea*
 <br>
 
-IPI(Installer Provisioned Infrastructure) 방법을 사용하여 배포할 때 오픈시프트는 컨트롤러 용 하드웨어를 관리하기 위해 [Metal3](https://metal3.io/)를 사용합니다. 이로 인해 하드웨어는 클러스터에서 세 가지 다른 방식으로 표시됩니다.
+IPI(Installer Provisioned Infrastructure) 방법을 사용하여 배포할 때 오픈시프트는 컨트롤러용 하드웨어를 관리하기 위해 [Metal3](https://metal3.io/)를 사용합니다. 이로 인해 하드웨어는 클러스터에서 세 가지 다른 방식으로 표시됩니다.
 <br>
 <body>
     <table>
